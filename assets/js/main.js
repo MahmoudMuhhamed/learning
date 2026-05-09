@@ -440,14 +440,14 @@ $(".progressBar").each(function(){
 
   // ============== Mobile Menu Sidebar & Offcanvas Js Start ========
   $('.toggle-mobileMenu').on('click', function () {
-    $('.mobile-menu').addClass('active');
+    $('.mobile-menu').removeClass('d-none');
     $('.side-overlay').addClass('show');
     $('body').addClass('scroll-hide-sm');
   }); 
 
   $('.close-button, .side-overlay').on('click', function () {
-    $('.mobile-menu').removeClass('active');
-    $('.side-overlay').removeClass('show');
+    $('.mobile-menu').addClass('d-none');
+    $('.side-overlay').removeClass('show')
     $('body').removeClass('scroll-hide-sm');
   }); 
   // ============== Mobile Menu Sidebar & Offcanvas Js End ========
