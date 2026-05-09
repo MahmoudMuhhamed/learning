@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title> courses</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/thumbs/logo-1ss.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- select2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- jquery-ui -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <!-- plyr Css -->
+    <link rel="stylesheet" href="assets/css/plyr.css">
+    <!-- Editor js Toolbar Start -->
+    <link rel="stylesheet" href="assets/css/editor-quill.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- dataTables.dataTables -->
+    <link rel="stylesheet" href="assets/css/dataTables.dataTables.min.css">
+    
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head> 
+<body>
+    
+<!--==================== Preloader Start ====================-->
+  <div class="preloader">
+    <img src="assets/images/icons/preloader.gif" alt="">
+  </div>
+<!--==================== Preloader End ====================-->
+
+<!--==================== Overlay Start ====================-->
+<div class="overlay"></div>
+<!--==================== Overlay End ====================-->
+
+<!--==================== Sidebar Overlay End ====================-->
+<div class="side-overlay"></div>
+<!--==================== Sidebar Overlay End ====================-->
+
+<!-- ==================== Scroll to Top End Here ==================== -->
+<div class="progress-wrap">
+  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+  </svg>
+</div>
+<!-- ==================== Scroll to Top End Here ==================== -->
+
+<!-- ==================== Mobile Menu Start Here ==================== -->
+<div class="mobile-menu scroll-sm d-lg-none d-block">
+    <button type="button" class="close-button"><i class="ph ph-x"></i> </button>
+    <div class="mobile-menu__inner">
+        <a href="index.html" class="mobile-menu__logo">
+            <img src="assets/images/thumbs/logo-1.png" width="110px" alt="Logo">
+        </a>
+        <div class="mobile-menu__menu">
+            
+<ul class="nav-menu flex-align nav-menu--mobile">
+    <li class="nav-menu__item has-submenu activePage">
+        <a href="index-3.html" class="nav-submenu__link hover-bg-neutral-30"> الرئيسية</a>   
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">الكورسات</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="course.html" class="nav-submenu__link hover-bg-neutral-30"> عرض شبكي للكورسات</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="course-list-view.html" class="nav-submenu__link hover-bg-neutral-30"> عرض قائمة للكورسات</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="course-details.html" class="nav-submenu__link hover-bg-neutral-30"> تفاصيل الكورس</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="lesson-details.html" class="nav-submenu__link hover-bg-neutral-30"> تفاصيل الدرس</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">الصفحات</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="about-two.html" class="nav-submenu__link hover-bg-neutral-30"> من نحن</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="pricing-plan.html" class="nav-submenu__link hover-bg-neutral-30">خطة الاشتراك</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="instructor.html" class="nav-submenu__link hover-bg-neutral-30"> المدرب</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item">
+        <a href="admin-dashbord.html" class="nav-menu__link">لوحة التحكم</a>
+    </li>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">مدونة</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-30"> شبكة المدونة</a>
+            </li>
+            
+            <li class="nav-submenu__item">
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-30"> تفاصيل المدونة</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item">
+        <a href="contact.html" class="nav-menu__link">تواصل معنا</a>
+    </li>
+</ul>
+
+            <div class="d-sm-none d-block mt-24">
+                <div class="header-select border border-neutral-30 bg-main-25 rounded-pill position-relative">
+    <span class="select-icon d-xxl-block d-none position-absolute top-50 translate-middle-y inset-inline-start-0 z-1 ms-lg-4 ms-12 text-xl pointer-event-none d-flex">
+        <i class="ph-bold ph-squares-four"></i>
+    </span>
+    <select class="js-example-basic-single border-0" name="state">
+        <option value="1" selected disabled>Categories</option>
+        <option value="1">Design</option>
+        <option value="1">Development</option>
+        <option value="1">Architecture</option>
+        <option value="1">Life Style</option>
+        <option value="1">Data Science</option>
+        <option value="1">Marketing</option>
+        <option value="1">Music</option>
+        <option value="1">Typography</option>
+        <option value="1">Finance</option>
+        <option value="1">Motivation</option>
+    </select>
+</div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- ==================== Mobile Menu End Here ==================== -->
+
+
+    <!-- ==================== Header Start Here ==================== -->
+<header class="header">
+    <div class="container container--xl">
+        <nav class="header-inner flex-between gap-8">
+
+            <div class="header-content-wrapper flex-align flex-grow-1">
+                <!-- Logo Start -->
+                <div class="logo">
+                    <a href="index-3.html" class="link h-50 w-130">
+                        <img src="assets/images/thumbs/logo-1.png" width="" alt="Logo" class="h-100 w-100 rounded-10">
+                    </a>
+                </div>
+                <!-- Logo End  -->
+    
+                <!-- Select Start -->
+                <div class="d-sm-block d-none">
+                    <div class="header-select border border-neutral-30 bg-main-25 rounded-pill position-relative">
+    <span class="select-icon d-xxl-block d-none position-absolute top-50 translate-middle-y inset-inline-start-0 z-1 ms-lg-4 ms-12 text-xl pointer-event-none d-flex">
+        <i class="ph-bold ph-squares-four"></i>
+    </span>
+    <select class="js-example-basic-single border-0" name="state">
+        <option value="1" selected disabled>Categories</option>
+        <option value="1">Design</option>
+        <option value="1">Development</option>
+        <option value="1">Architecture</option>
+        <option value="1">Life Style</option>
+        <option value="1">Data Science</option>
+        <option value="1">Marketing</option>
+        <option value="1">Music</option>
+        <option value="1">Typography</option>
+        <option value="1">Finance</option>
+        <option value="1">Motivation</option>
+    </select>
+</div>
+                </div>
+                <!-- Select End -->
+    
+                <!-- Menu Start  -->
+                <div class="header-menu d-lg-block d-none">
+                    
+<ul class="nav-menu flex-align ">
+    <li class="activePage">
+        <a href="index-3.html" class="nav-menu__link">الرئيسية</a>
+   
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">الكورسات</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="course.html" class="nav-submenu__link hover-bg-neutral-30"> عرض شبكة الكورسات</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="course-list-view.html" class="nav-submenu__link hover-bg-neutral-30">عرض قائمة الكورسات</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="course-details.html" class="nav-submenu__link hover-bg-neutral-30"> تفاصيل الكورسات</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="lesson-details.html" class="nav-submenu__link hover-bg-neutral-30">تفاصيل الدرس</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">الصفحات</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="about-two.html" class="nav-submenu__link hover-bg-neutral-30"> حولنا</a>
+            </li>
+        
+            <li class="nav-submenu__item">
+                <a href="pricing-plan.html" class="nav-submenu__link hover-bg-neutral-30">خطة الاشتراك</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="instructor.html" class="nav-submenu__link hover-bg-neutral-30"> المدربون</a>
+            </li>
+            
+            
+        </ul>
+    </li>
+    <li>
+        <a href="admin-dashbord.html" class="nav-menu__link">لوحة التحكم</a>
+
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link"> المدونة</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-30"> شبكة المدونة</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-30">تفاصيل المدونة</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item">
+        <a href="contact.html" class="nav-menu__link">تواصل معنا</a>
+    </li>
+</ul>
+                </div>
+                <!-- Menu End  -->
+            </div>
+
+            <!-- Header Right start -->
+            <div class="header-right flex-align">
+                <form action="#" class="search-form position-relative d-xl-block d-none">
+                    <input type="text" class="common-input rounded-pill bg-main-25 pe-58 border-neutral-30" placeholder="بحث...">
+                    <button type="submit" class="w-36 h-36 bg-main-600 hover-bg-main-700 rounded-circle flex-center text-md text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8">
+                        <i class="ph-bold ph-magnifying-glass"></i>
+                    </button>
+                </form>
+                
+                <button type="button" class="toggle-mobileMenu d-lg-none text-neutral-200 flex-center">
+                    <i class="ph ph-list"></i> 
+                </button>
+            </div>
+            <!-- Header Right End  -->
+        </nav>
+    </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+    <!-- ==================== Breadcrumb Start Here ==================== -->
+<section class="breadcrumb py-120 bg-main-25 position-relative z-1 overflow-hidden mb-0">
+    <img src="assets/images/shapes/shape1.png" alt="" class="shape one animation-rotation d-md-block d-none">
+    <img src="assets/images/shapes/shape2.png" alt="" class="shape two animation-scalation d-md-block d-none">
+    <img src="assets/images/shapes/shape3.png" alt="" class="shape eight animation-walking d-md-block d-none">
+    <img src="assets/images/shapes/shape5.png" alt="" class="shape six animation-walking d-md-block d-none">
+    <img src="assets/images/shapes/shape4.png" alt="" class="shape four animation-scalation">
+    <img src="assets/images/shapes/shape4.png" alt="" class="shape nine animation-scalation">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="breadcrumb__wrapper">
+                    <h1 class="breadcrumb__title display-4 fw-semibold text-center"> تفاصيل الكورسات</h1>
+                    <ul class="breadcrumb__list d-flex align-items-center justify-content-center gap-4">
+                        <li class="breadcrumb__item">
+                            <a href="index.html" class="breadcrumb__link text-neutral-500 hover-text-main-600 fw-medium"> 
+                                <i class="text-lg d-inline-flex ph-bold ph-house"></i> الرئيسية</a>
+                         </li>
+                        <li class="breadcrumb__item">
+                            <i class="text-neutral-500 d-flex ph-bold ph-caret-right"></i>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a href="course.html" class="breadcrumb__link text-neutral-500 hover-text-main-600 fw-medium"> الكورسات</a> 
+                        </li>
+                        <li class="breadcrumb__item ">
+                            <i class="text-neutral-500 d-flex ph-bold ph-caret-right"></i>
+                        </li>
+                        <li class="breadcrumb__item"> 
+                            <span class="text-main-two-600"> تفاصيل الكورسات </span> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================== Breadcrumb End Here ==================== -->
+
+    <!-- ============================== Course Details Section Start ============================== -->
+    <section class="course-details py-120">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-xl-8">
+                    <!-- Details Content Start -->
+                    <div class="course-details__content border border-neutral-30 rounded-12 bg-main-25 p-12">
+                        <img src="assets/images/thumbs/banner-three-img1.jpg" alt="" class="rounded-8 cover-img">
+                        <div class="p-20">
+                            <h2 class="mt-24 mb-24">تعلم بايثون: من المبتدئ إلى المتقدم</h2>
+                            <p class="text-neutral-700">افتح قوة بايثون، واحدة من أكثر لغات البرمجة تنوعًا وطلبًا اليوم. تم تصميم هذا الكورس الشامل للمبتدئين والمبرمجين ذوي الخبرة الذين يرغبون في تعزيز مهاراتهم. سواء كنت تهدف إلى بدء مسيرة مهنية جديدة في تطوير البرمجيات أو تحليل البيانات، أو ببساطة تريد أتمتة المهام اليومية، سيقدم لك هذا الكورس المهارات والمعرفة التي تحتاجها للنجاح.</p>
+                            <span class="d-block border-bottom border-main-100 my-32"></span>
+                            <h3 class="mb-16">ما ستتعلمه:</h3>
+                            <ul class="list-dotted d-flex flex-column gap-24">
+                                <li>أساسيات بايثون: فهم أساسيات برمجة بايثون، بما في ذلك البنية، المتغيرات، وأنواع البيانات. تعلم كيفية كتابة، تصحيح، وتنفيذ نصوص بايثون.</li>
+                                <li>هياكل البيانات والخوارزميات: إتقان هياكل البيانات المدمجة في بايثون مثل القوائم، القواميس، والمجموعات. تنفيذ خوارزميات للفرز، البحث، ومعالجة البيانات بكفاءة.</li>
+                                <li>البرمجة كائنية التوجه (OOP): اكتساب الكفاءة في مفاهيم OOP مثل الفئات، الكائنات، الوراثة، والتعددية، وهي أمور حاسمة لتطوير برامج معقدة ومعيارية.</li>
+                                <li>معالجة الملفات وإدخال/إخراج العمليات: تعلم كيفية القراءة من الملفات والكتابة إليها، إدارة أدلة الملفات، ومعالجة الاستثناءات لعمليات ملفات قوية.</li>
+                                <li>المكتبات والأطر: استكشف مكتبات بايثون الأساسية مثل NumPy، Pandas، Matplotlib، وSeaborn لمعالجة البيانات وتصورها. احصل على مقدمة لأطر الويب مثل Flask وDjango.</li>
+                                <li>علم البيانات والتعلم الآلي: الغوص في تحليل البيانات وتصورها. استخدم Scikit-learn لبناء وتقييم نماذج التعلم الآلي.</li>
+                                <li>تطوير المشروع: تطبيق مهاراتك في سيناريوهات العالم الحقيقي مع مشاريع عملية. تطوير مشروع نهائي شامل يعرض إتقانك لبايثون.</li>
+                            </ul>
+                            <span class="d-block border-bottom border-main-100 my-32"></span>
+                            <h4 class="mb-16">لماذا تختار هذا الكورس:</h4>
+                            <ul class="list-dotted d-flex flex-column gap-24">
+                                <li>تعليم خبير: تعلم من الدكتور جين سميث، مطور برمجيات ومعلم ذو خبرة، الذي يجلب رؤى عملية ومعرفة عملية إلى الفصل.</li>
+                                <li>تعلم عملي: انخرط في تمارين تفاعلية ومشاريع تعزز التعلم وتوفر خبرة عملية.</li>
+                                <li>تعلم مرن: دراسة بوتيرتك الخاصة مع الوصول مدى الحياة إلى جميع مواد الكورس، بما في ذلك محاضرات الفيديو، تمارين البرمجة، والموارد القابلة للتنزيل.</li>
+                                <li>منهج شامل: غطِ جميع الجوانب الأساسية لبرمجة بايثون، من الأساسيات إلى المواضيع المتقدمة، مما يضمن فهمًا شاملاً للغة.</li>
+                                <li>مجتمع داعم: استفد من بيئة تعلم داعمة مع الوصول إلى منتدى الكورس، حيث يمكنك طرح الأسئلة، مشاركة الرؤى، والتعاون مع المتعلمين الآخرين.</li>
+                            </ul>
+                            <span class="d-block border-bottom border-main-100 my-32"></span>
+                            <h5 class="mb-16">مثالي لـ:</h5>
+                            <ul class="list-dotted d-flex flex-column gap-24">
+                                <li>المبتدئين بدون خبرة برمجية سابقة الذين يرغبون في بدء مسيرة مهنية في تطوير البرمجيات أو علم البيانات.</li>
+                                <li>المبرمجين المتوسطين الذين يريدون تعميق فهمهم لبايثون واستكشاف المواضيع المتقدمة.</li>
+                                <li>المهنيين الذين يسعون لأتمتة المهام، تحليل البيانات، أو تطوير تطبيقات الويب باستخدام بايثون.</li>
+                            </ul>
+                            <span class="d-block border-bottom border-main-100 my-32"></span>
+                            <h6 class="mb-16">سجل اليوم:</h6>
+                            <ul class="list-dotted d-flex flex-column gap-24">
+                                <li>خذ الخطوة الأولى نحو إتقان بايثون. سجل الآن وابدأ رحلتك لتصبح مبرمج بايثون ماهرًا!</li>
+                            </ul>
+                            <p class="mt-24 text-neutral-700">يجب أن يعطي هذا النظرة العامة التفصيلية للطلاب المحتملين فهمًا واضحًا لما يمكنهم توقعه من الكورس وفوائد التسجيل. لا تتردد في تعديل أي جزء ليتناسب بشكل أفضل مع عروض الكورس المحددة لديك. أخبرني إذا كنت بحاجة إلى تخصيص إضافي أو تفاصيل إضافية!</p>
+                        </div>
+                    </div>
+                    <!-- Details Content End -->
+
+                    <!-- Curriculum Start -->
+                    <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 mt-24">
+                        <h5 class="mb-0">المنهج</h5>
+                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                        <div class="accordion common-accordion style-three" id="accordionExampleTwo">
+
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneTwo" aria-expanded="true" aria-controls="collapseOneTwo">
+                                    مقدمة في بايثون
+                                </button>
+                              </h2>
+                              <div id="collapseOneTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExampleTwo">
+                                <div class="accordion-body p-0">
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">ما هو بايثون؟</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">إعداد بيئة بايثون الخاصة بك</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">كتابة برنامج بايثون الأول الخاص بك</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">فهم بنية وصيغة بايثون</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoTwo" aria-expanded="false" aria-controls="collapseTwoTwo">
+                                    هل ستتلقى شهادة عند الانتهاء؟
+                                </button>
+                              </h2>
+                              <div id="collapseTwoTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
+                                <div class="accordion-body p-0">
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">What is Python?</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">Setting up your Python environment</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">Writing your first Python program</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">Understanding Python syntax and structure</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeTwo" aria-expanded="false" aria-controls="collapseThreeTwo">
+                                    ماذا لو كان لدي أسئلة أثناء الكورس؟
+                                </button>
+                              </h2>
+                              <div id="collapseThreeTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
+                                <div class="accordion-body p-0">
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">What is Python?</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">Setting up your Python environment</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">Writing your first Python program</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">Understanding Python syntax and structure</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourTwo" aria-expanded="false" aria-controls="collapseFourTwo">
+                                    هل يمكنني الوصول إلى مواد الكورس بعد الانتهاء؟
+                                </button>
+                              </h2>
+                              <div id="collapseFourTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
+                                <div class="accordion-body p-0">
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">What is Python?</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">Setting up your Python environment</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">Writing your first Python program</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">Understanding Python syntax and structure</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveTwo" aria-expanded="false" aria-controls="collapseFiveTwo">
+                                    هل أحتاج إلى خبرة برمجية سابقة لأخذ هذا الكورس؟
+                                </button>
+                              </h2>
+                              <div id="collapseFiveTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
+                                <div class="accordion-body p-0">
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">What is Python?</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">Setting up your Python environment</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">Writing your first Python program</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="curriculam-item flex-between gap-16 text-neutral-500 fw-medium hover-text-main-600">   
+                                        <span class="flex-align gap-12">
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                            <span class="text-line-1">Understanding Python syntax and structure</span>
+                                        </span>
+                                        <span class="flex-align gap-12 flex-shrink-0">
+                                            30:25
+                                            <i class="text-xl d-flex ph-bold ph-video-camera"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Curriculum End -->
+
+                    <!-- FAQs Start -->
+                    <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 mt-24">
+                        <h5 class="mb-0">الأسئلة الشائعة</h5>
+                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                        <div class="accordion common-accordion style-two" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    كم مدة الكورس؟
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="accordion-body__desc">يمكنك التواصل مع المدرب عبر منتدى الكورس أو البريد الإلكتروني. لدينا أيضًا جلسات أسئلة وأجوبة أسبوعية حيث يمكنك الحصول على إجابات لأسئلتك مباشرة.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    هل ستتلقى شهادة عند الانتهاء؟
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="accordion-body__desc">يمكنك التواصل مع المدرب عبر منتدى الكورس أو البريد الإلكتروني. لدينا أيضًا جلسات أسئلة وأجوبة أسبوعية حيث يمكنك الحصول على إجابات لأسئلتك مباشرة.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ماذا لو كان لدي أسئلة أثناء الكورس؟
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="accordion-body__desc">يمكنك التواصل مع المدرب عبر منتدى الكورس أو البريد الإلكتروني. لدينا أيضًا جلسات أسئلة وأجوبة أسبوعية حيث يمكنك الحصول على إجابات لأسئلتك مباشرة.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    هل يمكنني الوصول إلى مواد الكورس بعد الانتهاء؟
+                                </button>
+                              </h2>
+                              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="accordion-body__desc">يمكنك التواصل مع المدرب عبر منتدى الكورس أو البريد الإلكتروني. لدينا أيضًا جلسات أسئلة وأجوبة أسبوعية حيث يمكنك الحصول على إجابات لأسئلتك مباشرة.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    هل أحتاج إلى خبرة برمجية سابقة لأخذ هذا الكورس؟
+                                </button>
+                              </h2>
+                              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="accordion-body__desc">يمكنك التواصل مع المدرب عبر منتدى الكورس أو البريد الإلكتروني. لدينا أيضًا جلسات أسئلة وأجوبة أسبوعية حيث يمكنك الحصول على إجابات لأسئلتك مباشرة.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQs End -->
+
+                    <!-- Instructor Start -->
+                    <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 mt-24">
+                        <div class="d-flex align-items-start flex-wrap flex-md-nowrap gap-32">
+                            <img src="assets/images/thumbs/quilia.jpg" alt="" class="">
+                            <div class="">
+                                <div class="flex-between gap-16">
+                                    <h4 class="mb-0">Denial Lie</h4>
+                                    <div class="dropdown flex-shrink-0">
+                                        <button class="text-gray-600 text-xl d-flex rounded-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ph-fill ph-dots-three-outline"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu--md border-0 bg-transparent p-0">
+                                            <div class="card border border-gray-100 rounded-12 box-shadow-custom">
+                                                <div class="card-body p-12">
+                                                    <div class="max-h-200 overflow-y-auto scroll-sm pe-8">
+                                                        <ul>
+                                                            <li class="mb-0">
+                                                                <button type="button" class="delete-item-btn py-6 text-15 px-8 hover-bg-gray-50 text-gray-300 w-100 rounded-8 fw-normal text-xs d-block text-start">
+                                                                    <span class="text">Delete</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="d-block border border-neutral-30 my-20 border-dashed"></span>
+                                <div class="d-flex flex-column gap-16 flex-wrap max-w-340">
+                                    <div class="flex-between gap-8">
+                                        <div class="flex-align gap-8">
+                                            <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-lightbulb"></i></span>
+                                            <span class="text-neutral-700 text-lg fw-medium">مصمم واجهات المستخدم</span>
+                                        </div>
+                                        <div class="flex-align gap-8">
+                                            <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-watch"></i></span>
+                                            <span class="text-neutral-700 text-lg fw-medium">12 كورس</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-between gap-8 flex-wrap">
+                                        <div class="flex-align gap-8">
+                                            <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-users"></i></span>
+                                            <span class="text-neutral-700 text-lg fw-medium">36 ألف طالب</span>
+                                        </div>
+                                        <div class="flex-align gap-4">
+                                            <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                            <span class="text-lg text-neutral-700 fw-semibold">
+                                                4.7
+                                                <span class="text-neutral-100 fw-normal">(6.4k)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="d-block border border-neutral-30 my-20 border-dashed"></span>
+                                <p class="text-neutral-500">تقدم سيرًا ذاتية أو ملفات شخصية مختصرة لكل مدرب. قد تشمل هذه التفاصيل عن مسيراتهم المهنية، إنجازاتهم، واهتماماتهم.</p>
+                                <span class="d-block border border-neutral-30 my-20 border-dashed"></span>
+                                <ul class="social-list flex-align gap-16">
+                                    <li class="social-list__item">
+                                        <a href="https://www.facebook.com" class="text-main-600 text-xl hover-text-white w-40 h-40 rounded-circle border border-main-600 hover-bg-main-600 flex-center"><i class="ph-bold ph-facebook-logo"></i></a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="https://www.twitter.com" class="text-main-600 text-xl hover-text-white w-40 h-40 rounded-circle border border-main-600 hover-bg-main-600 flex-center"> <i class="ph-bold ph-twitter-logo"></i></a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="https://www.linkedin.com" class="text-main-600 text-xl hover-text-white w-40 h-40 rounded-circle border border-main-600 hover-bg-main-600 flex-center"><i class="ph-bold ph-instagram-logo"></i></a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="https://www.pinterest.com" class="text-main-600 text-xl hover-text-white w-40 h-40 rounded-circle border border-main-600 hover-bg-main-600 flex-center"><i class="ph-bold ph-pinterest-logo"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Instructor End -->
+
+                    <!-- Review Start -->
+                    <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 mt-24">
+                        <h5 class="mb-0">متوسط التقييمات</h5>
+                        <span class="d-block border border-neutral-30 my-32 border-dashed"></span>
+
+                        <div class="d-flex flex-sm-row flex-column gap-36">
+                            <div class="rounded-16 px-40 py-24 flex-center flex-column flex-shrink-0 text-center bg-main-600 text-white">
+                                <h2 class="mb-8 text-white">4.8</h2>
+                                <div class="flex-center gap-4">
+                                    <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star"></i></span>
+                                    <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star"></i></span>
+                                    <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star"></i></span>
+                                    <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star"></i></span>
+                                    <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star-half"></i></span>
+                                </div>
+                                <span class="mt-8 text-gray-500">26 تقييم</span>
+                            </div>
+
+                            <div class="flex-grow-1">
+                                <div class="flex-align gap-20 mb-8">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-gray-900 flex-shrink-0">5</span>
+                                    </div>
+                                    <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-main-600 rounded-pill" style="width: 90%"></div>
+                                    </div>
+                                    <span class="text-gray-900 flex-shrink-0">90%</span>
+                                </div>
+                                <div class="flex-align gap-20 mb-8">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-gray-900 flex-shrink-0">5</span>
+                                    </div>
+                                    <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-main-600 rounded-pill" style="width: 75%"></div>
+                                    </div>
+                                    <span class="text-gray-900 flex-shrink-0">75%</span>
+                                </div>
+                                <div class="flex-align gap-20 mb-8">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-gray-900 flex-shrink-0">5</span>
+                                    </div>
+                                    <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-main-600 rounded-pill" style="width: 67%"></div>
+                                    </div>
+                                    <span class="text-gray-900 flex-shrink-0">67%</span>
+                                </div>
+                                <div class="flex-align gap-20 mb-8">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-gray-900 flex-shrink-0">5</span>
+                                    </div>
+                                    <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-main-600 rounded-pill" style="width: 44%"></div>
+                                    </div>
+                                    <span class="text-gray-900 flex-shrink-0">44%</span>
+                                </div>
+                                <div class="flex-align gap-20">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-gray-900 flex-shrink-0">5</span>
+                                    </div>
+                                    <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-main-600 rounded-pill" style="width: 21%"></div>
+                                    </div>
+                                    <span class="text-gray-900 flex-shrink-0">21%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="d-block border border-neutral-30 my-32 border-dashed"></span>
+                        <div class="flex-between gap-16 flex-wrap mb-24">
+                            <h6 class="mb-0">جميع التقييمات</h6>
+                            <div class="flex-align gap-16">
+                                <div class="flex-align gap-8">
+                                    <span class="text-neutral-500 flex-shrink-0">ترتيب حسب :</span>
+                                    <select class="form-select ps-20 pe-28 py-8 fw-medium rounded-pill bg-main-25 border border-neutral-30 text-neutral-700">
+                                        <option value="1">الأحدث</option>
+                                        <option value="1">الرائج</option>
+                                        <option value="1">الشائع</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Item -->
+                        <div class="border border-neutral-30 rounded-12 bg-white p-32">
+                            <div class="flex-align gap-8 mb-16">
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star-half"></i></span>
+                            </div>
+                            <p class="text-neutral-700">"كان هذا الكورس رائعًا! كانت تفسيرات المدرب واضحة وموجزة، مما جعل من السهل فهم حتى المواضيع الأكثر تعقيدًا."</p>
+                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                            <div class="flex-align gap-24">
+                                <img src="assets/images/thumbs/profile-2.jpg" alt="" class="w-60 h-60 rounded-circle cover-img">
+                                <div class="">
+                                    <h6 class="text-xl mb-8 fw-medium">ماري جونسون</h6>
+                                    <span class="text-neutral-700 text-sm">مدير مشاريع</span>
+                                </div>
+                            </div>
+                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+
+                            <div class="flex-align flex-wrap gap-40">
+                                <button type="button" class="like-button flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                    <span class="like-button__icon text-xl d-flex"><i class="ph-bold ph-thumbs-up"></i></span>
+                                    <span class="like-button__text">178</span>
+                                </button>
+                                <a href="#commentForm" class="flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                    <i class="text-xl d-flex ph-bold ph-chat-centered-text"></i>
+                                    رد
+                                </a>
+                            </div>
+                            <div class="flex-align gap-20 mt-24">
+                                <img src="assets/images/thumbs/profile.png" alt="" class="w-60 h-60 rounded-circle cover-img">
+                                <input type="text" class="common-input rounded-pill bg-main-25 border-neutral-30 py-16" placeholder="انضم إلى النقاش...">
+                            </div>
+                        </div>
+                        <!-- Review Item -->
+
+                        <!-- Review Item -->
+                        <div class="border border-neutral-30 rounded-12 bg-white p-32 mt-24">
+                            <div class="flex-align gap-8 mb-16">
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star-half"></i></span>
+                            </div>
+                            <p class="text-neutral-700">"كورس رائع للمبتدئين والمتقدمين على حد سواء. كانت المشاريع مفيدة بشكل خاص في تطبيق ما تعلمته. أوصي بشدة!"</p>
+                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                            <div class="flex-align gap-24">
+                                <img src="assets/images/thumbs/profile-2.jpg" alt="" class="w-60 h-60 rounded-circle cover-img">
+                                <div class="">
+                                    <h6 class="text-xl mb-8 fw-medium">أليس براون</h6>
+                                    <span class="text-neutral-700 text-sm">مطور برمجيات</span>
+                                </div>
+                            </div>
+                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+
+                            <div class="flex-align flex-wrap gap-40">
+                                <button type="button" class="like-button flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                    <span class="like-button__icon text-xl d-flex"><i class="ph-bold ph-thumbs-up"></i></span>
+                                    <span class="like-button__text">178</span>
+                                </button>
+                                <a href="#commentForm" class="flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                    <i class="text-xl d-flex ph-bold ph-chat-centered-text"></i>
+                                    Reply
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Review Item -->
+
+                        <!-- Review Item -->
+                        <div class="border border-neutral-30 rounded-12 bg-white p-32 mt-24">
+                            <div class="flex-align gap-8 mb-16">
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star-half"></i></span>
+                            </div>
+                            <p class="text-neutral-700">"الدكتور سميث مدرب رائع. جعلت خبرته العملية وأسلوب التدريس هذا الكورس واحدًا من أفضل ما درست فيه."</p>
+                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                            <div class="flex-align gap-24">
+                                <img src="assets/images/thumbs/profile.png" alt="" class="w-60 h-60 rounded-circle cover-img">
+                                <div class="">
+                                    <h6 class="text-xl mb-8 fw-medium">ديفيد ويلسون</h6>
+                                    <span class="text-neutral-700 text-sm">هاكر أخلاقي</span>
+                                </div>
+                            </div>
+                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+
+                            <div class="flex-align flex-wrap gap-40">
+                                <button type="button" class="like-button flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                    <span class="like-button__icon text-xl d-flex"><i class="ph-bold ph-thumbs-up"></i></span>
+                                    <span class="like-button__text">178</span>
+                                </button>
+                                <a href="#commentForm" class="flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                    <i class="text-xl d-flex ph-bold ph-chat-centered-text"></i>
+                                    Reply
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Review Item -->
+
+                        <button type="button" class="btn btn-main rounded-pill flex-center gap-8 mt-40">
+                            عرض جميع التقييمات
+                            <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                        </button>
+                    </div>
+                    <!-- Review End -->
+
+                    <!-- Review Form Start -->
+                    <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 mt-24">
+                        <form action="#" id="commentForm">
+                            <h5 class="mb-0">اكتب تقييم</h5>
+                            <span class="d-block border border-neutral-30 my-32 border-dashed"></span>
+                            <div class="mb-24">
+                                <label for="name" class="text-neutral-700 text-lg fw-medium mb-12">الاسم </label>
+                                <input type="text" class="common-input rounded-pill" id="name" placeholder="أدخل الاسم...">
+                            </div>
+                            <div class="mb-24">
+                                <label for="email" class="text-neutral-700 text-lg fw-medium mb-12">البريد الإلكتروني </label>
+                                <input type="email" class="common-input rounded-pill" id="email" placeholder="أدخل البريد الإلكتروني...">
+                            </div>
+                            <div class="mb-24">
+                                <label class="text-neutral-700 text-lg fw-medium mb-12">تقييم النجوم </label>
+                                
+                                <div id="half-star-rating">
+                                    <div class="rating-group">
+                                        <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                        <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                        <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                        <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                        <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                        <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                        <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                        <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                        <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                        <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                        <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                        <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                        <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                        <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                        <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                        <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                        <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                        <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                        <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                        <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                        <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                        <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="mb-24">
+                                <label for="desc" class="text-neutral-700 text-lg fw-medium mb-12">سؤالك </label>
+                                <textarea id="desc" class="common-input rounded-24" placeholder="اكتب سؤالك..."></textarea>
+                            </div>
+                            <div class="mb-0">
+                                <button type="submit" class="btn btn-main rounded-pill flex-center gap-8 mt-40">
+                                    إرسال التقييم
+                                    <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Review Form End -->
+                </div>
+                <div class="col-xl-4">
+                    <div class="course-details__sidebar border border-neutral-30 rounded-12 bg-white p-8">
+                        <div class="border border-neutral-30 rounded-12 bg-main-25 p-24 bg-main-25">
+                            <span class="text-neutral-700 text-lg mb-12">السعر</span>
+                            <div class="flex-align align-items-start flex-wrap gap-8 border-bottom border-neutral-40 pb-24 mb-24">
+                                <div class="flex-align gap-12 text-neutral-700">
+                                    <span class="text-2xl d-flex"><i class="ph-bold ph-tag"></i></span>
+                                    <span class="">من</span>
+                                    <h2 class="mb-0">$99.99</h2>
+                                </div>
+                                <button type="button" class="text-neutral-500 text-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Initial Price">
+                                    <i class="ph-bold ph-info"></i>
+                                </button>
+                            </div>
+                            <div class="border-bottom border-neutral-40 pb-24 mb-24 flex-between flex-wrap gap-16">
+                                <div class="flex-align gap-12">
+                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph ph-watch"></i></span>
+                                    <span class="text-neutral-700 text-lg fw-normal">عنوان الكورس</span>
+                                </div>
+                                <span class="text-lg fw-medium text-neutral-700">تطوير الويب</span>
+                            </div>
+                            <div class="border-bottom border-neutral-40 pb-24 mb-24 flex-between flex-wrap gap-16">
+                                <div class="flex-align gap-12">
+                                    <span class="text-neutral-700 text-2xl d-flex"> <i class="ph ph-video-camera"></i></span>
+                                    <span class="text-neutral-700 text-lg fw-normal">الدروس</span>
+                                </div>
+                                <span class="text-lg fw-medium text-neutral-700">16 فيديو</span>
+                            </div>
+                            <div class="border-bottom border-neutral-40 pb-24 mb-24 flex-between flex-wrap gap-16">
+                                <div class="flex-align gap-12">
+                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph ph-globe"></i> </span>
+                                    <span class="text-neutral-700 text-lg fw-normal">اللغة</span>
+                                </div>
+                                <span class="text-lg fw-medium text-neutral-700">العربية</span>
+                            </div>
+                            <div class="border-bottom border-neutral-40 pb-24 mb-24 flex-between flex-wrap gap-16">
+                                <div class="flex-align gap-12">
+                                    <span class="text-neutral-700 text-2xl d-flex"> <i class="ph ph-chart-pie"></i></span>
+                                    <span class="text-neutral-700 text-lg fw-normal">مستوى الكورس</span>
+                                </div>
+                                <span class="text-lg fw-medium text-neutral-700">مبتدئ</span>
+                            </div>
+                            <div class="border-bottom border-neutral-40 pb-24 mb-24 flex-between flex-wrap gap-16">
+                                <div class="flex-align gap-12">
+                                    <span class="text-neutral-700 text-2xl d-flex"> <i class="ph ph-star"></i> </span>
+                                    <span class="text-neutral-700 text-lg fw-normal">التقييمات</span>
+                                </div>
+                                <span class="text-lg fw-medium text-neutral-700">4.7(5.5k)</span>
+                            </div>
+                            <div class="border-bottom border-neutral-40 pb-24 mb-24 flex-between flex-wrap gap-16">
+                                <div class="flex-align gap-12">
+                                    <span class="text-neutral-700 text-2xl d-flex"> <i class="ph ph-question"></i> </span>
+                                    <span class="text-neutral-700 text-lg fw-normal">الاختبارات</span>
+                                </div>
+                                <span class="text-lg fw-medium text-neutral-700">08</span>
+                            </div>
+                            <div class="border-bottom border-neutral-40 pb-24 mb-24 flex-between flex-wrap gap-16">
+                                <div class="flex-align gap-12">
+                                    <span class="text-neutral-700 text-2xl d-flex"> <i class="ph ph-clock"></i> </span>
+                                    <span class="text-neutral-700 text-lg fw-normal">المدة</span>
+                                </div>
+                                <span class="text-lg fw-medium text-neutral-700">7 أسابيع</span>
+                            </div>
+                            <div class="border-bottom border-neutral-40 pb-24 mb-24 flex-between flex-wrap gap-16">
+                                <div class="flex-align gap-12">
+                                    <span class="text-neutral-700 text-2xl d-flex"> <i class="ph ph-users"></i> </span>
+                                    <span class="text-neutral-700 text-lg fw-normal">الطلاب</span>
+                                </div>
+                                <span class="text-lg fw-medium text-neutral-700">2.5k</span>
+                            </div>
+                            <div class="border-bottom border-neutral-40 pb-24 mb-24 flex-between flex-wrap gap-16">
+                                <div class="flex-align gap-12">
+                                    <span class="text-neutral-700 text-2xl d-flex"> <i class="ph ph-certificate"></i> </span>
+                                    <span class="text-neutral-700 text-lg fw-normal">الشهادات</span>
+                                </div>
+                                <span class="text-lg fw-medium text-neutral-700">نعم</span>
+                            </div>
+                            <div class="border-bottom border-neutral-40 pb-24 mb-24 flex-between flex-wrap gap-16">
+                                <div class="flex-align gap-12">
+                                    <span class="text-neutral-700 text-2xl d-flex"> <i class="ph ph-seal-percent"></i> </span>
+                                    <span class="text-neutral-700 text-lg fw-normal">نسبة النجاح</span>
+                                </div>
+                                <span class="text-lg fw-medium text-neutral-700">88%</span>
+                            </div>
+                            <div class="border-bottom border-neutral-40 pb-24 mb-24 flex-between flex-wrap gap-16">
+                                <div class="flex-align gap-12">
+                                    <span class="text-neutral-700 text-2xl d-flex"> <i class="ph ph-calendar-dot"></i> </span>
+                                    <span class="text-neutral-700 text-lg fw-normal">الموعد النهائي</span>
+                                </div>
+                                <span class="text-lg fw-medium text-neutral-700">01 يونيو، 2024</span>
+                            </div>
+                            <div class="border-bottom border-neutral-40 pb-24 mb-24 flex-between flex-wrap gap-16">
+                                <div class="flex-align gap-12">
+                                    <span class="text-neutral-700 text-2xl d-flex"> <i class="ph ph-user-circle"></i> </span>
+                                    <span class="text-neutral-700 text-lg fw-normal">المدرب </span>
+                                </div>
+                                <span class="text-lg fw-medium text-neutral-700">دنيال لاي</span>
+                            </div>
+                            <a href="contact.html" class="btn btn-main rounded-pill flex-center gap-8 mt-40">
+                                See All Reviews
+                                <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                            </a>
+                            <div class="mt-24 flex-center gap-24">
+                                <button type="button" class="w-44 h-44 flex-center bg-white rounded-circle text-main-600 text-lg hover-text-white hover-bg-main-600 transition-1">
+                                    <i class="ph-bold ph-shopping-cart-simple"></i>
+                                </button>
+                                <div class="dropdown flex-shrink-0">
+                                    <button class="w-44 h-44 flex-center bg-white rounded-circle text-main-600 text-lg hover-text-white hover-bg-main-600 transition-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="ph-bold ph-share-network"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu--md border-0 bg-transparent p-0">
+                                        <div class="card border border-gray-100 rounded-12 box-shadow-custom">
+                                            <div class="card-body p-16">
+                                                <ul class="social-list flex-align gap-8">
+                                                    <li class="social-list__item">
+                                                        <a href="https://www.facebook.com" class="text-main-600 text-md hover-text-white w-36 h-36 rounded-circle border border-main-200 hover-bg-main-600 hover-border-main-600 flex-center"><i class="ph-bold ph-facebook-logo"></i></a>
+                                                    </li>
+                                                    <li class="social-list__item">
+                                                        <a href="https://www.twitter.com" class="text-main-600 text-md hover-text-white w-36 h-36 rounded-circle border border-main-200 hover-bg-main-600 hover-border-main-600 flex-center"> <i class="ph-bold ph-twitter-logo"></i></a>
+                                                    </li>
+                                                    <li class="social-list__item">
+                                                        <a href="https://www.linkedin.com" class="text-main-600 text-md hover-text-white w-36 h-36 rounded-circle border border-main-200 hover-bg-main-600 hover-border-main-600 flex-center"><i class="ph-bold ph-instagram-logo"></i></a>
+                                                    </li>
+                                                    <li class="social-list__item">
+                                                        <a href="https://www.pinterest.com" class="text-main-600 text-md hover-text-white w-36 h-36 rounded-circle border border-main-200 hover-bg-main-600 hover-border-main-600 flex-center"><i class="ph-bold ph-pinterest-logo"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== Course Details Section End ============================== -->
+    
+    <!-- ================================= Certificate Section Start ================================= -->
+<div class="certificate">
+    <div class="container container--lg">
+        <div class="certificate-box px-16 bg-main-600 rounded-16">
+            <div class="container">
+                <div class="position-relative py-80">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6">
+                            <div class="certificate__content">
+                                <div class="flex-align gap-8 mb-16 wow bounceInDown">
+                                    <span class="w-8 h-8 bg-white rounded-circle"></span>
+                                    <h5 class="text-white mb-0">احصل على الشهادة</h5>
+                                </div>
+                                <h2 class="text-white mb-40 fw-medium wow bounceIn">احصل على شهادة مهارات عالية الجودة من EduAll</h2>
+                                <a href="" class="btn btn-white rounded-pill flex-align d-inline-flex gap-8 hover-bg-main-800 wow bounceInUp">
+                                    ابدأ الآن
+                                    <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 d-xl-block d-none">
+                            <div class="certificate__thumb" data-aos="fade-up-left">    
+                                <img src="assets/images/thumbs/in-school-indian-female-teacher-engaging-students-2026-03-25-09-32-00-utc.jpg" alt="" data-tilt data-tilt-max="8" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-full-page-listening>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- ================================= Certificate Section End ================================= -->
+    
+    
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer bg-main-25 position-relative z-1">
+    <img src="assets/images/shapes/shape2.png" alt="" class="shape five animation-scalation">
+    <img src="assets/images/shapes/shape6.png" alt="" class="shape one animation-scalation">
+    
+    <div class="py-120 ">
+        <div class="container container-two">
+            <div class="row row-cols-xxl-5 row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-5">
+                <div class="col" data-aos="fade-up" data-aos-duration="300" >
+                    <div class="footer-item">
+                        <div class="footer-item__logo">
+                            <a href="index.html"> <img src="assets/images/thumbs/logo-1.png" alt=""></a>
+                        </div>
+                        <p class="my-32">تجاوز EduAll جميع توقعاتي! كان المدربون ليسوا خبراء فقط</p>
+                        <ul class="social-list flex-align gap-24">
+                            <li class="social-list__item">
+                                <a href="https://www.facebook.com" class="text-main-600 text-2xl hover-text-main-two-600"><i class="ph-bold ph-facebook-logo"></i></a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="https://www.twitter.com" class="text-main-600 text-2xl hover-text-main-two-600"> <i class="ph-bold ph-twitter-logo"></i></a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="https://www.linkedin.com" class="text-main-600 text-2xl hover-text-main-two-600"><i class="ph-bold ph-instagram-logo"></i></a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="https://www.pinterest.com" class="text-main-600 text-2xl hover-text-main-two-600"><i class="ph-bold ph-pinterest-logo"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-duration="400" >
+                    <div class="footer-item">
+                        <h4 class="footer-item__title mb-32">التنقل</h4>
+                        <ul class="footer-menu">
+                            <li class="mb-16">
+                                <a href="about.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">من نحن</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="courses.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">الكورسات</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="instructor.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">المدرب</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="faq.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">الأسئلة الشائعة</a>
+                            </li>
+                            <li class="mb-0">
+                                <a href="blog.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">المدونة</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-duration="600" >
+                    <div class="footer-item">
+                        <h4 class="footer-item__title mb-32">الفئة</h4>
+                        <ul class="footer-menu">
+                            <li class="mb-16">
+                                <a href="courses.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">تصميم واجهات المستخدم</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="courses.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">تطوير الويب</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="courses.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">تطوير بايثون</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="courses.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">التسويق الرقمي</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="courses.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">تصميم الجرافيك</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-duration="800" >
+                    <div class="footer-item">
+                        <h4 class="footer-item__title mb-32">Contact Us</h4>
+                        <div class="flex-align gap-20 mb-24">
+                            <span class="icon d-flex text-32 text-main-600"><i class="ph ph-phone"></i></span>
+                            <div class="">
+                                <a href="tel:(207)555-0119" class="text-neutral-500 d-block hover-text-main-600 mb-4">(207) 555-0119</a>
+                                <a href="tel:(704)555-0127" class="text-neutral-500 d-block hover-text-main-600 mb-0">(704) 555-0127</a>
+                            </div>
+                        </div>
+                        <div class="flex-align gap-20 mb-24">
+                            <span class="icon d-flex text-32 text-main-600"><i class="ph ph-envelope-open"></i></span>
+                            <div class="">
+                                <a href="mailto:dwallo@gmail.com" class="text-neutral-500 d-block hover-text-main-600 mb-4">dwallo@gmail.com</a>
+                                <a href="mailto:eduAll@gmail.com" class="text-neutral-500 d-block hover-text-main-600 mb-0">eduAll@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex-align gap-20 mb-24">
+                            <span class="icon d-flex text-32 text-main-600"><i class="ph ph-map-trifold"></i></span>
+                            <div class="">
+                                <span class="text-neutral-500 d-block mb-4">5488 srker Rd .</span>
+                                <span class="text-neutral-500 d-block mb-0">8745 doer Dr.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-duration="1000" >
+                    <div class="footer-item">
+                        <h4 class="footer-item__title mb-32">Subscribe Here</h4>
+                        <p class="text-neutral-500">Enter your email address to register to our newsletter subscription</p>
+                        <form action="#" class="mt-24 position-relative">
+                            <input type="email" class="form-control bg-white shadow-none border border-neutral-30 rounded-pill h-52 ps-24 pe-48 focus-border-main-600" placeholder="Email...">
+                            <button type="submit" class="w-36 h-36 flex-center rounded-circle bg-main-600 text-white hover-bg-main-800 position-absolute top-50 translate-middle-y inset-inline-end-0 me-8">
+                                <i class="ph ph-paper-plane-tilt"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- bottom Footer -->
+        <div class="bottom-footer bg-main-25 border-top border-dashed border-main-100 border-0 py-32">
+            <div class="container container-two">
+                <div class="bottom-footer__inner flex-between gap-3 flex-wrap">
+                    <p class="bottom-footer__text"> Copyright &copy; 2024 <span class="fw-semibold">EduAll</span> All Rights Reserved.</p>
+                    <div class="footer-links">
+                        <a href="#" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">Privacy Policy</a>
+                        <a href="#" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ==================== Footer End Here ==================== -->
+  
+
+        <!-- Jquery js -->
+    <!-- <script src="assets/js/jquery-3.7.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="assets/js/boostrap.bundle.min.js"></script>
+    <!-- select2 Js -->
+    <script src="assets/js/select2.min.js"></script>
+    <!-- Phosphor Icon Js -->
+    <script src="assets/js/phosphor-icon.js"></script>
+    <!-- Slick js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Slick js -->
+    <script src="assets/js/counter.min.js"></script>
+    <!-- magnific popup -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- Jquery Ui js -->
+    <script src="assets/js/jquery-ui.js"></script>
+    <!-- marquee js -->
+    <script src="assets/js/marquee.min.js"></script>
+    <!-- react charts-->
+     <script src="assets/js/apexcharts.js"></script>
+    <!-- plyr Js -->
+    <script src="assets/js/plyr.js"></script>
+    <!-- vanilla Tilt -->
+    <!-- Editor js Toolbar Start -->
+    <script src="assets/js/editor-quill.js"></script>
+    <!-- dataTables -->
+    <script src="assets/js/dataTables.min.js"></script>
+    <!-- Tilt -->
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+    <!-- wow -->
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/aos.js"></script>
+    
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+
+    
+
+
+
+    </body>
+</html>
