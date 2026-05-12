@@ -7,7 +7,7 @@
     <!-- Title -->
     <title>Courses</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/thumbs/logo-1ss.png">
+    <link rel="shortcut icon" href="assets/images/thumbs/Image33.png">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- select2 -->
@@ -60,60 +60,66 @@
     <button type="button" class="close-button"><i class="ph ph-x"></i> </button>
     <div class="mobile-menu__inner">
         <a href="index.html" class="mobile-menu__logo">
-            <img src="assets/images/thumbs/logo-1.png" alt="Logo">
+            <img src="assets/images/thumbs/logo.8.png" alt="Logo">
         </a>
         <div class="mobile-menu__menu">
             
-<ul class="nav-menu flex-align nav-menu--mobile">
-    <li class="nav-menu__item has-submenu activePage">
-        <a href="index.html" class="nav-submenu__link hover-bg-neutral-30"> الرئيسية</a>   
+<ul class="nav-menu flex-align ">
+    <li class="activePage">
+        <a href="index.html" class="nav-menu__link" data-i18n="nav.home">الرئيسية</a>
+   
     </li>
     <li class="nav-menu__item has-submenu">
-        <a href="javascript:void(0)" class="nav-menu__link">الكورسات</a>
+        <a href="javascript:void(0)" class="nav-menu__link" data-i18n="nav.program">البرنامج</a>
          <ul class="nav-submenu scroll-sm">
             <li class="nav-submenu__item">
-                <a href="course.html" class="nav-submenu__link hover-bg-neutral-30"> عرض شبكي للكورسات</a>
+                <a href="course.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.courses"> الدورات</a>
             </li>
             <li class="nav-submenu__item">
-                <a href="course-list-view.html" class="nav-submenu__link hover-bg-neutral-30"> عرض قائمة للكورسات</a>
+                <a href="course-list-view.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.professionalDiploma">دبلوم مهني</a>
             </li>
             <li class="nav-submenu__item">
-                <a href="course-details.html" class="nav-submenu__link hover-bg-neutral-30"> تفاصيل الكورس</a>
+                <a href="course-details.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.professionalMaster">ماجستير احترافي</a>
             </li>
             <li class="nav-submenu__item">
-                <a href="lesson-details.html" class="nav-submenu__link hover-bg-neutral-30"> تفاصيل الدرس</a>
+                <a href="lesson-details.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.professionalDoctorate">دكتوراه مهنية</a>
             </li>
         </ul>
     </li>
     <li class="nav-menu__item has-submenu">
-        <a href="javascript:void(0)" class="nav-menu__link">الصفحات</a>
+        <a href="javascript:void(0)" class="nav-menu__link" data-i18n="nav.pages">الصفحات</a>
          <ul class="nav-submenu scroll-sm">
             <li class="nav-submenu__item">
-                <a href="about-two.html" class="nav-submenu__link hover-bg-neutral-30"> من نحن</a>
+                <a href="about-two.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.aboutUs"> حولنا</a>
+            </li>
+        
+            <li class="nav-submenu__item">
+                <a href="pricing-plan.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.subscriptionPlan">خطة الاشتراك</a>
             </li>
             <li class="nav-submenu__item">
-                <a href="pricing-plan.html" class="nav-submenu__link hover-bg-neutral-30">خطة الاشتراك</a>
-            </li>
-        </ul>
-    </li>
-    <li class="nav-menu__item">
-        <a href="admin-dashbord.html" class="nav-menu__link">لوحة التحكم</a>
-    </li>
-    </li>
-    <li class="nav-menu__item has-submenu">
-        <a href="javascript:void(0)" class="nav-menu__link">مدونة</a>
-         <ul class="nav-submenu scroll-sm">
-            <li class="nav-submenu__item">
-                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-30"> شبكة المدونة</a>
+                <a href="instructor.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.instructors"> المدربون</a>
             </li>
             
+            
+        </ul>
+    </li>
+    <li>
+        <a href="admin-dashbord.html" class="nav-menu__link" data-i18n="nav.dashboard">لوحة التحكم</a>
+
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link" data-i18n="nav.blog"> المدونة</a>
+         <ul class="nav-submenu scroll-sm">
             <li class="nav-submenu__item">
-                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-30"> تفاصيل المدونة</a>
+                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.blogNetwork"> شبكة المدونة</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.blogDetails">تفاصيل المدونة</a>
             </li>
         </ul>
     </li>
     <li class="nav-menu__item">
-        <a href="contact.html" class="nav-menu__link">تواصل معنا</a>
+        <a href="contact.html" class="nav-menu__link" data-i18n="nav.contactUs">تواصل معنا</a>
     </li>
 </ul>
 
@@ -123,17 +129,17 @@
         <i class="ph-bold ph-squares-four"></i>
     </span>
     <select class="js-example-basic-single border-0" name="state">
-        <option value="1" selected disabled>Categories</option>
-        <option value="1">Design</option>
-        <option value="1">Development</option>
-        <option value="1">Architecture</option>
-        <option value="1">Life Style</option>
-        <option value="1">Data Science</option>
-        <option value="1">Marketing</option>
-        <option value="1">Music</option>
-        <option value="1">Typography</option>
-        <option value="1">Finance</option>
-        <option value="1">Motivation</option>
+        <option value="1" selected disabled data-i18n="categories.categories">Categories</option>
+        <option value="1" data-i18n="categories.design">Design</option>
+        <option value="1" data-i18n="categories.development">Development</option>
+        <option value="1" data-i18n="categories.architecture">Architecture</option>
+        <option value="1" data-i18n="categories.lifeStyle">Life Style</option>
+        <option value="1" data-i18n="categories.dataScience">Data Science</option>
+        <option value="1" data-i18n="categories.marketing">Marketing</option>
+        <option value="1" data-i18n="categories.music">Music</option>
+        <option value="1" data-i18n="categories.typography">Typography</option>
+        <option value="1" data-i18n="categories.finance">Finance</option>
+        <option value="1" data-i18n="categories.motivation">Motivation</option>
     </select>
 </div>
             </div>
@@ -153,7 +159,7 @@
                 <!-- Logo Start -->
                 <div class="logo">
                     <a href="index.html" class="link h-50 w-130">
-                        <img src="assets/images/thumbs/logo-1.png" width="" alt="Logo" class="h-100 w-100 rounded-10">
+                        <img src="assets/images/thumbs/logo.8.png" width="" alt="Logo" class="h-100 w-100 rounded-10">
                     </a>
                 </div>
                 <!-- Logo End  -->
@@ -165,17 +171,17 @@
         <i class="ph-bold ph-squares-four"></i>
     </span>
     <select class="js-example-basic-single border-0" name="state">
-        <option value="1" selected disabled>Categories</option>
-        <option value="1">Design</option>
-        <option value="1">Development</option>
-        <option value="1">Architecture</option>
-        <option value="1">Life Style</option>
-        <option value="1">Data Science</option>
-        <option value="1">Marketing</option>
-        <option value="1">Music</option>
-        <option value="1">Typography</option>
-        <option value="1">Finance</option>
-        <option value="1">Motivation</option>
+        <option value="1" selected disabled data-i18n="categories.categories">Categories</option>
+        <option value="1" data-i18n="categories.design">Design</option>
+        <option value="1" data-i18n="categories.development">Development</option>
+        <option value="1" data-i18n="categories.architecture">Architecture</option>
+        <option value="1" data-i18n="categories.lifeStyle">Life Style</option>
+        <option value="1" data-i18n="categories.dataScience">Data Science</option>
+        <option value="1" data-i18n="categories.marketing">Marketing</option>
+        <option value="1" data-i18n="categories.music">Music</option>
+        <option value="1" data-i18n="categories.typography">Typography</option>
+        <option value="1" data-i18n="categories.finance">Finance</option>
+        <option value="1" data-i18n="categories.motivation">Motivation</option>
     </select>
 </div>
                 </div>
@@ -186,60 +192,60 @@
                     
 <ul class="nav-menu flex-align ">
     <li class="activePage">
-        <a href="index.html" class="nav-menu__link">الرئيسية</a>
+        <a href="index.html" class="nav-menu__link" data-i18n="nav.home">الرئيسية</a>
    
     </li>
     <li class="nav-menu__item has-submenu">
-        <a href="javascript:void(0)" class="nav-menu__link">الكورسات</a>
+        <a href="javascript:void(0)" class="nav-menu__link" data-i18n="nav.program">البرنامج</a>
          <ul class="nav-submenu scroll-sm">
             <li class="nav-submenu__item">
-                <a href="course.html" class="nav-submenu__link hover-bg-neutral-30"> عرض شبكة الكورسات</a>
+                <a href="course.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.courses"> الدورات</a>
             </li>
             <li class="nav-submenu__item">
-                <a href="course-list-view.html" class="nav-submenu__link hover-bg-neutral-30">عرض قائمة الكورسات</a>
+                <a href="course-list-view.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.professionalDiploma">دبلوم مهني</a>
             </li>
             <li class="nav-submenu__item">
-                <a href="course-details.html" class="nav-submenu__link hover-bg-neutral-30"> تفاصيل الكورسات</a>
+                <a href="course-details.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.professionalMaster">ماجستير احترافي</a>
             </li>
             <li class="nav-submenu__item">
-                <a href="lesson-details.html" class="nav-submenu__link hover-bg-neutral-30">تفاصيل الدرس</a>
+                <a href="lesson-details.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.professionalDoctorate">دكتوراه مهنية</a>
             </li>
         </ul>
     </li>
     <li class="nav-menu__item has-submenu">
-        <a href="javascript:void(0)" class="nav-menu__link">الصفحات</a>
+        <a href="javascript:void(0)" class="nav-menu__link" data-i18n="nav.pages">الصفحات</a>
          <ul class="nav-submenu scroll-sm">
             <li class="nav-submenu__item">
-                <a href="about-two.html" class="nav-submenu__link hover-bg-neutral-30"> حولنا</a>
+                <a href="about-two.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.aboutUs"> حولنا</a>
             </li>
         
             <li class="nav-submenu__item">
-                <a href="pricing-plan.html" class="nav-submenu__link hover-bg-neutral-30">خطة الاشتراك</a>
+                <a href="pricing-plan.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.subscriptionPlan">خطة الاشتراك</a>
             </li>
             <li class="nav-submenu__item">
-                <a href="instructor.html" class="nav-submenu__link hover-bg-neutral-30"> المدربون</a>
+                <a href="instructor.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.instructors"> المدربون</a>
             </li>
             
             
         </ul>
     </li>
     <li>
-        <a href="admin-dashbord.html" class="nav-menu__link">لوحة التحكم</a>
+        <a href="admin-dashbord.html" class="nav-menu__link" data-i18n="nav.dashboard">لوحة التحكم</a>
 
     </li>
     <li class="nav-menu__item has-submenu">
-        <a href="javascript:void(0)" class="nav-menu__link"> المدونة</a>
+        <a href="javascript:void(0)" class="nav-menu__link" data-i18n="nav.blog"> المدونة</a>
          <ul class="nav-submenu scroll-sm">
             <li class="nav-submenu__item">
-                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-30"> شبكة المدونة</a>
+                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.blogNetwork"> شبكة المدونة</a>
             </li>
             <li class="nav-submenu__item">
-                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-30">تفاصيل المدونة</a>
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.blogDetails">تفاصيل المدونة</a>
             </li>
         </ul>
     </li>
     <li class="nav-menu__item">
-        <a href="contact.html" class="nav-menu__link">تواصل معنا</a>
+        <a href="contact.html" class="nav-menu__link" data-i18n="nav.contactUs">تواصل معنا</a>
     </li>
 </ul>
                 </div>
@@ -247,16 +253,23 @@
             </div>
 
             <!-- Header Right start -->
-            <div class="header-right flex-align">
+            <div class="header-right flex-align gap-16">
                 <form action="#" class="search-form position-relative d-xl-block d-none">
-                    <input type="text" class="common-input rounded-pill bg-main-25 pe-58 border-neutral-30" placeholder="بحث...">
+                    <input type="text" class="common-input rounded-pill bg-main-25 pe-58 border-neutral-30" placeholder="search...">
                     <button type="submit" class="w-36 h-36 bg-main-600 hover-bg-main-700 rounded-circle flex-center text-md text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8">
                         <i class="ph-bold ph-magnifying-glass"></i>
                     </button>
                 </form>
-                
+
+                <!-- Language Switcher -->
+                <div class="language-switcher d-flex gap-8 align-items-center">
+                    <button type="button" class="lang-btn lang-ar ps-12 pe-12 py-8 rounded-8 fw-semibold text-14 border-0 bg-main-25 hover-bg-main-25 hover-text-neutral-700 text-white transition-1" data-lang="ar">العربية</button>
+                    <span class="text-neutral-500">/</span>
+                    <button type="button" class="lang-btn lang-en ps-12 pe-12 py-8 rounded-8 fw-semibold text-14 border-0 bg-main-25 text-neutral-700 hover-bg-main-600 hover-text-white transition-1" data-lang="en">English</button>
+                </div>
+
                 <button type="button" class="toggle-mobileMenu d-lg-none text-neutral-200 flex-center">
-                    <i class="ph ph-list"></i> 
+                    <i class="ph ph-list"></i>
                 </button>
             </div>
             <!-- Header Right End  -->
@@ -278,23 +291,23 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="breadcrumb__wrapper">
-                    <h1 class="breadcrumb__title display-4 fw-semibold text-center"> Courses Grid View</h1>
+                    <h1 class="breadcrumb__title display-4 fw-semibold text-center" data-i18n="breadcrumb.Viewlistofdiplomas"> عرض قائمة الدبلومات</h1>
                     <ul class="breadcrumb__list d-flex align-items-center justify-content-center gap-4">
                         <li class="breadcrumb__item">
-                            <a href="index.html" class="breadcrumb__link text-neutral-500 hover-text-main-600 fw-medium"> 
-                                <i class="text-lg d-inline-flex ph-bold ph-house"></i> Home</a>
+                            <a href="index.html" class="breadcrumb__link text-neutral-500 hover-text-main-600 fw-medium" data-i18n="nav.home"> 
+                                <i class="text-lg d-inline-flex ph-bold ph-house"></i> الرئيسية</a>
                          </li>
                         <li class="breadcrumb__item">
                             <i class="text-neutral-500 d-flex ph-bold ph-caret-right"></i>
                         </li>
                         <li class="breadcrumb__item">
-                            <a href="course.html" class="breadcrumb__link text-neutral-500 hover-text-main-600 fw-medium"> Courses</a> 
+                            <a href="course.html" class="breadcrumb__link text-neutral-500 hover-text-main-600 fw-medium"> الدبلومات</a> 
                         </li>
                         <li class="breadcrumb__item ">
                             <i class="text-neutral-500 d-flex ph-bold ph-caret-right"></i>
                         </li>
                         <li class="breadcrumb__item"> 
-                            <span class="text-main-two-600"> Grid View </span> 
+                            <span class="text-main-two-600" data-i18n="breadcrumb.diplomaView"> عرض الدبلومة </span> 
                         </li>
                     </ul>
                 </div>
@@ -308,17 +321,27 @@
     <section class="course-grid-view py-120">
         <div class="container">
             <div class="flex-between gap-16 flex-wrap mb-40">
-                <span class="text-neutral-500">Showing 9 of 600 Results </span>
+                <span class="text-neutral-500" data-i18n="courseGrid.showingResults" data-count="9" data-total="600">عرض 9 من 600 نتائج </span>
                 <div class="flex-align gap-8">
-                    <span class="text-neutral-500 flex-shrink-0">Sort By :</span>
+                    <span class="text-neutral-500 flex-shrink-0" data-i18n="courseGrid.sortBy">فرز حسب :</span>
                     <select class="form-select ps-20 pe-28 py-8 fw-semibold rounded-pill bg-main-25 border border-neutral-30 text-neutral-700">
-                        <option value="1">Newest</option>
-                        <option value="1">Trending</option>
-                        <option value="1">Popular</option>
+                        <option value="1" data-i18n="courseGrid.newest">الاجدد</option>
+                        <option value="1" data-i18n="courseGrid.mostPopular">الأكثر رواجاً</option>
+                        <option value="1" data-i18n="courseGrid.popular">شائع</option>
                     </select>
                 </div>
             </div>
-            <div class="row gy-4">
+            <!-- Nav-tabs start -->
+            
+            
+            
+            
+
+
+
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+    <div class="row gy-4">
                 <div class="col-lg-4 col-sm-6">
                     <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
                         <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
@@ -327,7 +350,7 @@
                             </a>
                             <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
                                 <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
-                                <span class="text-lg fw-medium">9h 36m</span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
                             </div>
                             <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
                                 <i class="ph ph-heart"></i>
@@ -336,16 +359,16 @@
                         <div class="course-item__content">
                             <div class="">
                                 <h4 class="mb-28">
-                                    <a href="course-details.html" class="link text-line-2">كورس تطوير واجهات المستخدم</a>
+                                    <a href="course-details.html" class="link text-line-2">دبلومة المحاسبة</a>
                                 </h4>
                                 <div class="flex-between gap-8 flex-wrap mb-16">
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">20 Lessons</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">6 الدروس</span>
                                     </div>
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">Beginner</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
                                     </div>
                                 </div>
                                 <div class="flex-between gap-8 flex-wrap">
@@ -377,12 +400,12 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
                         <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
-                            <a href="course-details.html" class="w-100 h-100">
+                            <a href="course2-details.html" class="w-100 h-100">
                                 <img src="assets/images/thumbs/library.JPG" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
                             </a>
                             <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
                                 <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
-                                <span class="text-lg fw-medium">25h 06m</span>
+                                <span class="text-lg fw-medium">40 ساعة تدريب</span>
                             </div>
                             <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
                                 <i class="ph ph-heart"></i>
@@ -391,16 +414,16 @@
                         <div class="course-item__content">
                             <div class="">
                                 <h4 class="mb-28">
-                                    <a href="course-details.html" class="link text-line-2">كورس Full Stack Development</a>
+                                    <a href="course2-details.html" class="link text-line-2">دبلومة إدارة الموارد البشرية </a>
                                 </h4>
                                 <div class="flex-between gap-8 flex-wrap mb-16">
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">20 Lessons</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">20 درس</span>
                                     </div>
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">Beginner</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
                                     </div>
                                 </div>
                                 <div class="flex-between gap-8 flex-wrap">
@@ -432,12 +455,12 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
                         <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
-                            <a href="course-details.html" class="w-100 h-100">
+                            <a href="course3-details.html" class="w-100 h-100">
                                 <img src="assets/images/thumbs/quilia.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
                             </a>
                             <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
                                 <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
-                                <span class="text-lg fw-medium">9h 36m</span>
+                                <span class="text-lg fw-medium">40 ساعة تدريب</span>
                             </div>
                             <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
                                 <i class="ph ph-heart"></i>
@@ -446,16 +469,16 @@
                         <div class="course-item__content">
                             <div class="">
                                 <h4 class="mb-28">
-                                    <a href="course-details.html" class="link text-line-2">كورس تصميم UI UX</a>
+                                    <a href="course3-details.html" class="link text-line-2">دبلومة التسويق الإلكتروني </a>
                                 </h4>
                                 <div class="flex-between gap-8 flex-wrap mb-16">
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">20 Lessons</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">20 درس</span>
                                     </div>
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">Beginner</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
                                     </div>
                                 </div>
                                 <div class="flex-between gap-8 flex-wrap">
@@ -487,12 +510,12 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
                         <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
-                            <a href="course-details.html" class="w-100 h-100">
+                            <a href="course4-details.html" class="w-100 h-100">
                                 <img src="assets/images/thumbs/unseen.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
                             </a>
                             <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
                                 <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
-                                <span class="text-lg fw-medium">9h 36m</span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
                             </div>
                             <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
                                 <i class="ph ph-heart"></i>
@@ -501,16 +524,16 @@
                         <div class="course-item__content">
                             <div class="">
                                 <h4 class="mb-28">
-                                    <a href="course-details.html" class="link text-line-2">كورس JavaScript</a>
+                                    <a href="course4-details.html" class="link text-line-2">دبلومة إدارة الأعمال المتكاملة</a>
                                 </h4>
                                 <div class="flex-between gap-8 flex-wrap mb-16">
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">20 Lessons</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">24 Lessons</span>
                                     </div>
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">Beginner</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
                                     </div>
                                 </div>
                                 <div class="flex-between gap-8 flex-wrap">
@@ -518,7 +541,7 @@
                                         <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
                                         <span class="text-lg text-neutral-700">
                                             4.7
-                                            <span class="text-neutral-100">(6.4k)</span>
+                                            <span class="text-neutral-100">(6k)</span>
                                         </span>
                                     </div>
                                     <div class="flex-align gap-8">
@@ -530,7 +553,7 @@
                                 </div>
                             </div>
                             <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
-                                <h4 class="mb-0 text-main-two-600">$148</h4>
+                                <h4 class="mb-0 text-main-two-600">$8</h4>
                                 <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
                                     Enroll Now
                                     <i class="ph ph-arrow-right"></i>
@@ -542,12 +565,12 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
                         <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
-                            <a href="course-details.html" class="w-100 h-100">
+                            <a href="course5-details.html" class="w-100 h-100">
                                 <img src="assets/images/thumbs/banner-three-img1.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
                             </a>
                             <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
                                 <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
-                                <span class="text-lg fw-medium">9h 36m</span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
                             </div>
                             <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
                                 <i class="ph ph-heart"></i>
@@ -556,16 +579,16 @@
                         <div class="course-item__content">
                             <div class="">
                                 <h4 class="mb-28">
-                                    <a href="course-details.html" class="link text-line-2">كورس React JS</a>
+                                    <a href="course5-details.html" class="link text-line-2">دبلومة السكرتارية التنفيذية وإدارة المكاتب الحديثة</a>
                                 </h4>
                                 <div class="flex-between gap-8 flex-wrap mb-16">
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">20 Lessons</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">26 درس</span>
                                     </div>
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">Beginner</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
                                     </div>
                                 </div>
                                 <div class="flex-between gap-8 flex-wrap">
@@ -573,7 +596,7 @@
                                         <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
                                         <span class="text-lg text-neutral-700">
                                             4.7
-                                            <span class="text-neutral-100">(6.4k)</span>
+                                            <span class="text-neutral-100">(6.1k)</span>
                                         </span>
                                     </div>
                                     <div class="flex-align gap-8">
@@ -585,7 +608,7 @@
                                 </div>
                             </div>
                             <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
-                                <h4 class="mb-0 text-main-two-600">$546</h4>
+                                <h4 class="mb-0 text-main-two-600">$6</h4>
                                 <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
                                     Enroll Now
                                     <i class="ph ph-arrow-right"></i>
@@ -597,12 +620,12 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
                         <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
-                            <a href="course-details.html" class="w-100 h-100">
+                            <a href="course6-details.html" class="w-100 h-100">
                                 <img src="assets/images/thumbs/library.JPG" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
                             </a>
                             <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
                                 <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
-                                <span class="text-lg fw-medium">9h 36m</span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
                             </div>
                             <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
                                 <i class="ph ph-heart"></i>
@@ -611,16 +634,16 @@
                         <div class="course-item__content">
                             <div class="">
                                 <h4 class="mb-28">
-                                    <a href="course-details.html" class="link text-line-2">كورس Next.js</a>
+                                    <a href="course6-details.html" class="link text-line-2">دبلومة احتراف التسويق والاستثمار العقاري</a>
                                 </h4>
                                 <div class="flex-between gap-8 flex-wrap mb-16">
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">20 Lessons</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">20 درس</span>
                                     </div>
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">Beginner</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدا</span>
                                     </div>
                                 </div>
                                 <div class="flex-between gap-8 flex-wrap">
@@ -628,7 +651,7 @@
                                         <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
                                         <span class="text-lg text-neutral-700">
                                             4.7
-                                            <span class="text-neutral-100">(6.4k)</span>
+                                            <span class="text-neutral-100">(6.6k)</span>
                                         </span>
                                     </div>
                                     <div class="flex-align gap-8">
@@ -640,7 +663,7 @@
                                 </div>
                             </div>
                             <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
-                                <h4 class="mb-0 text-main-two-600">$345</h4>
+                                <h4 class="mb-0 text-main-two-600">$5</h4>
                                 <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
                                     Enroll Now
                                     <i class="ph ph-arrow-right"></i>
@@ -652,12 +675,12 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
                         <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
-                            <a href="course-details.html" class="w-100 h-100">
+                            <a href="course7-details.html" class="w-100 h-100">
                                 <img src="assets/images/thumbs/quilia.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
                             </a>
                             <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
                                 <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
-                                <span class="text-lg fw-medium">9h 36m</span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
                             </div>
                             <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
                                 <i class="ph ph-heart"></i>
@@ -666,7 +689,7 @@
                         <div class="course-item__content">
                             <div class="">
                                 <h4 class="mb-28">
-                                    <a href="course-details.html" class="link text-line-2">كورس Python</a>
+                                    <a href="course7-details.html" class="link text-line-2">تحليل البيانات واستخراج الرؤى</a>
                                 </h4>
                                 <div class="flex-between gap-8 flex-wrap mb-16">
                                     <div class="flex-align gap-8">
@@ -707,12 +730,12 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
                         <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
-                            <a href="course-details.html" class="w-100 h-100">
+                            <a href="course8-details.html" class="w-100 h-100">
                                 <img src="assets/images/thumbs/library.JPG" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
                             </a>
                             <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
                                 <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
-                                <span class="text-lg fw-medium">9h 36m</span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
                             </div>
                             <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
                                 <i class="ph ph-heart"></i>
@@ -721,7 +744,7 @@
                         <div class="course-item__content">
                             <div class="">
                                 <h4 class="mb-28">
-                                    <a href="course-details.html" class="link text-line-2">كورس WordPress</a>
+                                    <a href="course8-details.html" class="link text-line-2">إدارة الجودة الشاملة</a>
                                 </h4>
                                 <div class="flex-between gap-8 flex-wrap mb-16">
                                     <div class="flex-align gap-8">
@@ -762,12 +785,12 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
                         <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
-                            <a href="course-details.html" class="w-100 h-100">
-                                <img src="assets/images/thumbs/quilia.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            <a href="course9-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/in-school-indian-female-teacher-engaging-students-2026-03-25-09-32-00-utc.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
                             </a>
                             <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
                                 <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
-                                <span class="text-lg fw-medium">9h 36m</span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
                             </div>
                             <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
                                 <i class="ph ph-heart"></i>
@@ -776,16 +799,16 @@
                         <div class="course-item__content">
                             <div class="">
                                 <h4 class="mb-28">
-                                    <a href="course-details.html" class="link text-line-2">كورس التسويق الرقمي</a>
+                                    <a href="course9-details.html" class="link text-line-2">الذكاء الاصطناعي وتقنيات المستقبل </a>
                                 </h4>
                                 <div class="flex-between gap-8 flex-wrap mb-16">
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">20 Lessons</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">21 درس</span>
                                     </div>
                                     <div class="flex-align gap-8">
                                         <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
-                                        <span class="text-neutral-700 text-lg fw-medium">Beginner</span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
                                     </div>
                                 </div>
                                 <div class="flex-between gap-8 flex-wrap">
@@ -793,7 +816,7 @@
                                         <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
                                         <span class="text-lg text-neutral-700">
                                             4.7
-                                            <span class="text-neutral-100">(6.4k)</span>
+                                            <span class="text-neutral-100">(6k)</span>
                                         </span>
                                     </div>
                                     <div class="flex-align gap-8">
@@ -815,26 +838,863 @@
                     </div>
                 </div>
             </div>
-            <ul class="pagination mt-40 flex-align gap-12 flex-wrap justify-content-center">
-                <li class="page-item">
-                    <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#"><i class="ph-bold ph-caret-left"></i></a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#">1</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#">2</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#">3</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#">...</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#"><i class="ph-bold ph-caret-right"></i></a>
-                </li>
-            </ul>
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+<div class="row gy-4">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/quilia.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course-details.html" class="link text-line-2">دبلومة احتراف التجارة الإلكترونية</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">12 الدروس</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile.png" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">AnikaZ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$148</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course2-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/library.JPG" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريب</span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course2-details.html" class="link text-line-2">دبلومة إعداد وتطوير المعلم المحترف</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">20 درس</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.4k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile.png" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Wade</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$499</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course3-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/susan.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريب</span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course3-details.html" class="link text-line-2">دبلومة احتراف تصميم الجرافيك</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">20 درس</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.4k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile-2.jpg" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Cody</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$457</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course4-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/unseen.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course4-details.html" class="link text-line-2">دبلومة إدارة الأعمال المتكاملة</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">24 Lessons</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile-2.jpg" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Dustin</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$8</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course5-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/banner-three-img1.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course5-details.html" class="link text-line-2">دبلومة السكرتارية التنفيذية وإدارة المكاتب الحديثة</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">26 درس</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.1k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile.png" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Bruce</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$6</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course6-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/library.JPG" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course6-details.html" class="link text-line-2">دبلومة احتراف التسويق والاستثمار العقاري</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">20 درس</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدا</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.6k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile-2.jpg" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Robert</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$5</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course7-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/quilia.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course7-details.html" class="link text-line-2">تحليل البيانات واستخراج الرؤى</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">20 Lessons</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Beginner</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.4k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile.png" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Robert</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$345</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course8-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/library.JPG" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course8-details.html" class="link text-line-2">إدارة الجودة الشاملة</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">20 Lessons</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Beginner</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.4k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile.png" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Robert</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$345</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course9-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/in-school-indian-female-teacher-engaging-students-2026-03-25-09-32-00-utc.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course9-details.html" class="link text-line-2">الذكاء الاصطناعي وتقنيات المستقبل </a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">21 درس</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile-2.jpg" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Robert</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$345</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  </div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+<div class="row gy-4">
+                <div class="col-lg-4 col-sm-6">
+                <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/banner-three-img1.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course-details.html" class="link text-line-2">دبلومة المحاسبة</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">6 الدروس</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.4k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile-2.jpg" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">AnikaZ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$148</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course2-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/library.JPG" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريب</span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course2-details.html" class="link text-line-2">دبلومة إدارة الموارد البشرية </a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">20 درس</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.4k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile.png" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Wade</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$499</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course3-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/quilia.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريب</span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course3-details.html" class="link text-line-2">دبلومة التسويق الإلكتروني </a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">20 درس</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.4k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile-2.jpg" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Cody</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$457</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course4-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/unseen.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course4-details.html" class="link text-line-2">دبلومة إدارة الأعمال المتكاملة</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">24 Lessons</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile-2.jpg" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Dustin</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$8</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course5-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/banner-three-img1.jpg" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course5-details.html" class="link text-line-2">دبلومة السكرتارية التنفيذية وإدارة المكاتب الحديثة</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">26 درس</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدأ</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.1k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile.png" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Bruce</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$6</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="course-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30">
+                        <div class="course-item__thumb rounded-12 overflow-hidden position-relative">
+                            <a href="course6-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/library.JPG" alt="Course Image" class="course-item__img rounded-12 cover-img transition-2">
+                            </a>
+                            <div class="flex-align gap-8 bg-main-600 rounded-pill px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">
+                                <span class="text-2xl d-flex"><i class="ph ph-clock"></i></span>
+                                <span class="text-lg fw-medium">40 ساعة تدريبية </span>
+                            </div>
+                            <button type="button" class="wishlist-btn w-48 h-48 bg-white text-main-two-600 flex-center position-absolute inset-block-start-0 inset-inline-end-0 mt-20 me-20 z-1 text-2xl rounded-circle transition-2">
+                                <i class="ph ph-heart"></i>
+                            </button>
+                        </div>
+                        <div class="course-item__content">
+                            <div class="">
+                                <h4 class="mb-28">
+                                    <a href="course6-details.html" class="link text-line-2">دبلومة احتراف التسويق والاستثمار العقاري</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap mb-16">
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-video-camera"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">20 درس</span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-chart-bar"></i></span>
+                                        <span class="text-neutral-700 text-lg fw-medium">مبتدا</span>
+                                    </div>
+                                </div>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.6k)</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex-align gap-8">
+                                        <span class="text-neutral-700 text-2xl d-flex">
+                                            <img src="assets/images/thumbs/profile-2.jpg" alt="User Image" class="w-32 h-32 object-fit-cover rounded-circle">
+                                        </span>
+                                        <span class="text-neutral-700 text-lg fw-medium">Robert</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                                <h4 class="mb-0 text-main-two-600">$5</h4>
+                                <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Enroll Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+  </div>
+</div>
+
+
+<ul class="pagination mt-40 flex-align gap-12 flex-wrap justify-content-center nav nav-pills mb-3" id="pills-tab" role="tablist">
+<li class="page-item">
+        <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#"><i class="ph-bold ph-caret-left"></i></a>
+    </li>
+  <li class="nav-item" role="presentation">
+    <button class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0 nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">1</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0 nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">2</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0 nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">3</button>
+  </li>
+<li class="page-item">
+        <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#"><i class="ph-bold ph-caret-right"></i></a>
+</li>
+</ul>
+
+            <!-- Nav-tabs end -->
         </div>
     </section>
     <!-- ============================== Course Grid View Section End ============================== -->
@@ -1040,6 +1900,9 @@
     <script src="assets/js/wow.min.js"></script>
 
     <script src="assets/js/aos.js"></script>
+    
+    <!-- translations js -->
+    <script src="assets/js/translations.js"></script>
     
     <!-- main js -->
     <script src="assets/js/main.js"></script>

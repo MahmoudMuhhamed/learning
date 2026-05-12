@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "home": "Home",
+    "program": "Program",
+    "courses": "Courses",
+    "professionalDiploma": "Professional Diploma",
+    "professionalMaster": "Professional Master",
+    "professionalDoctorate": "Professional Doctorate",
+    "pages": "Pages",
+    "aboutUs": "About Us",
+    "subscriptionPlan": "Subscription Plan",
+    "dashboard": "Dashboard",
+    "blog": "Blog",
+    "blogNetwork": "Blog Network",
+    "blogDetails": "Blog Details",
+    "contactUs": "Contact Us",
+    "search": "search",
+    "instructors": "instructors"
+  },
+  "breadcrumb": {
+    "diplomaView": "Diploma View",
+    "Viewlistofdiplomas": "View list of diplomas"
+  },
+  "courseGrid": {
+    "showingResults": "Showing {{count}} of {{total}} results",
+    "sortBy": "Sort by:",
+    "newest": "Newest",
+    "mostPopular": "Most Popular",
+    "popular": "Popular"
+  },
+  "courseCard": {
+    "trainingHours": "{{hours}} training hours",
+    "lessons": "{{count}} lessons",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "enrollNow": "Enroll Now",
+    "rating": "{{rating}} ({{reviews}})",
+    "by": "by {{instructor}}"
+  },
+  "courses": {
+    "accountingDiploma": "Accounting Diploma",
+    "hrManagementDiploma": "HR Management Diploma",
+    "digitalMarketingDiploma": "Digital Marketing Diploma",
+    "graphicDesignDiploma": "Graphic Design Diploma",
+    "webDevelopmentDiploma": "Web Development Diploma",
+    "dataScienceDiploma": "Data Science Diploma"
+  },
+  "categories": {
+    "design": "Design",
+    "development": "Development",
+    "architecture": "Architecture",
+    "lifeStyle": "Life Style",
+    "dataScience": "Data Science",
+    "marketing": "Marketing",
+    "music": "Music",
+    "typography": "Typography",
+    "finance": "Finance",
+    "motivation": "Motivation"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "program": "البرنامج",
+    "courses": "الدورات",
+    "professionalDiploma": "دبلوم مهني",
+    "professionalMaster": "ماجستير احترافي",
+    "professionalDoctorate": "دكتوراه مهنية",
+    "pages": "الصفحات",
+    "aboutUs": "من نحن",
+    "subscriptionPlan": "خطة الاشتراك",
+    "dashboard": "لوحة التحكم",
+    "blog": "مدونة",
+    "blogNetwork": "شبكة المدونة",
+    "blogDetails": "تفاصيل المدونة",
+    "contactUs": "تواصل معنا"
+  },
+  "breadcrumb": {
+    "diplomaView": "عرض الدبلومة",
+    "Viewlistofdiplomas": "عرض قائمة الدبلومات"
+  },
+  "courseGrid": {
+    "showingResults": "عرض {{count}} من {{total}} نتائج",
+    "sortBy": "فرز حسب :",
+    "newest": "الاجدد",
+    "mostPopular": "الأكثر رواجاً",
+    "popular": "شائع"
+  },
+  "courseCard": {
+    "trainingHours": "{{hours}} ساعة تدريبية",
+    "lessons": "{{count}} الدروس",
+    "beginner": "مبتدأ",
+    "intermediate": "متوسط",
+    "advanced": "متقدم",
+    "enrollNow": "سجل الآن",
+    "rating": "{{rating}} ({{reviews}})",
+    "by": "بواسطة {{instructor}}"
+  },
+  "courses": {
+    "accountingDiploma": "دبلومة المحاسبة",
+    "hrManagementDiploma": "دبلومة إدارة الموارد البشرية",
+    "digitalMarketingDiploma": "دبلومة التسويق الإلكتروني",
+    "graphicDesignDiploma": "دبلومة التصميم الجرافيكي",
+    "webDevelopmentDiploma": "دبلومة تطوير الويب",
+    "dataScienceDiploma": "دبلومة علوم البيانات"
+  },
+  "categories": {
+    "design": "التصميم",
+    "development": "التطوير",
+    "architecture": "الهندسة المعمارية",
+    "lifeStyle": "نمط الحياة",
+    "dataScience": "علوم البيانات",
+    "marketing": "التسويق",
+    "music": "الموسيقى",
+    "typography": "الخطوط",
+    "finance": "المالية",
+    "motivation": "الدافعية"
+  },
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "error": "خطأ",
+    "success": "نجح"
+  }
+}
