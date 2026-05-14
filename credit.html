@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>الاعتمادات </title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/thumbs/Image33.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- select2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- jquery-ui -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <!-- plyr Css -->
+    <link rel="stylesheet" href="assets/css/plyr.css">
+    <!-- Editor js Toolbar Start -->
+    <link rel="stylesheet" href="assets/css/editor-quill.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- dataTables.dataTables -->
+    <link rel="stylesheet" href="assets/css/dataTables.dataTables.min.css">
+    
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8C97A;
+      --deep-blue: #0A1628;
+      --mid-blue: #112240;
+      --accent-blue: #1A3A6B;
+      --silver: #BFC5CE;
+      --white: #FFFFFF;
+      --off-white: #F5F3EE;
+      --text-dark: #1A1A2E;
+    }
+
+
+    /* ─── HERO ─── */
+    .hero {
+      background: linear-gradient(135deg, var(--deep-blue) 0%, var(--accent-blue) 60%, #1B4F8A 100%);
+      position: relative;
+      padding: 100px 0 80px;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.06'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(201,168,76,0.15);
+      border: 1px solid var(--gold);
+      color: var(--gold-light);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Tajawal', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero p {
+      color: var(--silver);
+      font-size: 1.1rem;
+      line-height: 1.9;
+      max-width: 640px;
+    }
+    .hero-decoration {
+      position: absolute;
+      left: -60px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 320px;
+      height: 320px;
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero-decoration::after {
+      content: '';
+      position: absolute;
+      inset: 30px;
+      border: 1px solid rgba(201,168,76,0.08);
+      border-radius: 50%;
+    }
+
+    /* ─── SECTION LABEL ─── */
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .section-label::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+    }
+
+    /* ─── BENEFITS SECTION ─── */
+    .benefits-section {
+      background: var(--white);
+      padding: 150px 0 150px;
+    }
+    .benefits-section h2 {
+      font-family: 'Tajawal', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2rem, 2.5vw, 3rem);
+      color: var(--deep-blue);
+      margin-bottom: 8px;
+    }
+    .wavy-line {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 28px;
+    }
+    .wavy-line span {
+      display: block;
+      width: 28px;
+      height: 4px;
+      background: var(--gold);
+      border-radius: 4px;
+    }
+    .wavy-line span:nth-child(2) { width: 14px; opacity: .55; }
+    .wavy-line span:nth-child(3) { width: 20px; opacity: .3; }
+    .benefits-lead {
+      color: #555;
+      font-size: 1.25rem;
+      line-height: 1.85;
+      max-width: 520px;
+    }
+    .benefits-img-wrap {
+      position: relative;
+      display: inline-block;
+    }
+    .benefits-img-wrap img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 4px;
+      display: block;
+      object-fit: cover;
+    }
+    .benefits-img-wrap::before {
+      content: '';
+      position: absolute;
+      top: -16px;
+      right: -16px;
+      width: 80px;
+      height: 180px;
+      background: var(--gold);
+      z-index: 0;
+      border-radius: 2px;
+    }
+    .benefits-img-wrap::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: -12px;
+      width: 60px;
+      height: 160px;
+      background: var(--deep-blue);
+      z-index: 0;
+      border-radius: 2px;
+    }
+    .benefits-img-wrap img { position: relative; z-index: 1; }
+
+    /* ─── ACCREDITATION CARD ─── */
+    .accred-card {
+      background: var(--white);
+      border: 1px solid #E5E0D5;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform .3s, box-shadow .3s;
+      height: 100%;
+
+    }
+    .accred-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(10,22,40,.12);
+    }
+    .accred-card-header {
+      background: var(--deep-blue);
+      padding: 28px 30px 20px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .accred-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(201,168,76,.15);
+      border: 1px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .accred-card-header h3 {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 2rem;
+      margin: 0;
+      padding: 10px;
+    }
+    .accred-card-body { padding: 26px 30px 28px; }
+    .accred-card-body p {
+      color: #555;
+      font-size: 20px;
+      line-height: 1.85;
+      margin-bottom: 18px;
+        padding: 10px;
+    }
+    .accred-list { list-style: none; padding: 0; margin: 0 0 22px; }
+    .accred-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 12px 0;
+      border-bottom: 1px solid #F0EDE6;
+      color: #333;
+      font-size: 18px;
+      line-height: 1.65;
+    }
+    .accred-list li:last-child { border-bottom: none; }
+    .accred-list li .bullet {
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+    .accred-num {
+      display: inline-block;
+      background: #F5F2EA;
+      border: 1px solid #E0D9C5;
+      color: var(--accent-blue);
+      font-size: .78rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-left: 8px;
+    }
+    .btn-gold {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--deep-blue);
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      padding: 12px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background .2s, transform .2s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-gold:hover {
+      background: var(--gold-light);
+      color: var(--deep-blue);
+      transform: translateY(-2px);
+    }
+
+    /* ─── PROGRAMS GRID ─── */
+    .programs-section { background: var(--off-white); padding: 90px 0; }
+    .program-tile {
+      background: var(--white);
+      border: 1px solid #E5E0D5;
+      border-radius: 12px;
+      padding: 40px 26px 40px;
+      text-align: center;
+      transition: transform .3s, box-shadow .3s;
+      height: 100%;
+      box-shadow: 0 8px 20px rgba(10,22,40,.08);
+    }
+    .program-tile:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 45px rgba(10,22,40,.1);
+    }
+    .program-tile .tile-icon {
+      font-size: 2.4rem;
+      margin: 30px;
+      display: block;
+    }
+    .program-tile h4 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--deep-blue);
+      margin-bottom: 10px;
+    }
+    .program-tile p {
+      font-size: 20px;
+      color: #666;
+      line-height: 1.75;
+      margin: 0;
+    }
+    .tile-top-bar {
+      width: 40px;
+      height: 4px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin: 0 auto 20px;
+    }
+
+    /* ─── STATS BAR ─── */
+    .stats-bar {
+      background: var(--deep-blue);
+      padding: 60px 0;
+    }
+    .stat-item { text-align: center; }
+    .stat-number {
+      font-family: 'Tajawal', sans-serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-label {
+      color: var(--silver);
+      font-size: .9rem;
+      font-weight: 400;
+    }
+    .stat-divider {
+      width: 1px;
+      background: rgba(201,168,76,.2);
+      align-self: stretch;
+    }
+
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp .7s ease both; }
+    .fade-up-1 { animation-delay: .1s; }
+    .fade-up-2 { animation-delay: .25s; }
+    .fade-up-3 { animation-delay: .4s; }
+    .fade-up-4 { animation-delay: .55s; }
+
+    @media (max-width: 768px) {
+      .hero-decoration { display: none; }
+      .benefits-img-wrap { margin-top: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="preloader bg-white opacity-75">
+    <img width="400px" src="assets/images/thumbs/placeholder.png" alt="">
+  </div>
+<!--==================== Preloader End ====================-->
+
+<!--==================== Overlay Start ====================-->
+<div class="overlay"></div>
+<!--==================== Overlay End ====================-->
+
+<!--==================== Sidebar Overlay End ====================-->
+<div class="side-overlay"></div>
+<!--==================== Sidebar Overlay End ====================-->
+
+<!-- ==================== Scroll to Top End Here ==================== -->
+<div class="progress-wrap">
+  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+  </svg>
+</div>
+<!-- ==================== Scroll to Top End Here ==================== -->
+
+<!-- ==================== Mobile Menu Start Here ==================== -->
+<div class="mobile-menu scroll-sm d-lg-none d-block d-none">
+    <button type="button" class="close-button"><i class="ph ph-x"></i> </button>
+    <div class="mobile-menu__inner">
+        <a href="index.html" class="mobile-menu__logo">
+            <img src="assets/images/thumbs/logo.8.png" alt="Logo">
+        </a>
+        <div class="mobile-menu__menu">
+            
+<ul class="nav-menu flex-align nav-menu--mobile">
+    <li class="activePage">
+        <a href="index.html" class="nav-menu__link" data-i18n="nav.home">الرئيسية</a>
+   
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link" data-i18n="nav.program">البرامج</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="course.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.courses"> الدورات</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="course.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.professionalDiploma">دبلوم مهني</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="masters.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.professionalMaster">ماجستير احترافي</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="lesson-details.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.professionalDoctorate">دكتوراه مهنية</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link" data-i18n="nav.pages">الصفحات</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="about-two.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.aboutUs"> حولنا</a>
+            </li>
+        
+            <li class="nav-submenu__item">
+                <a href="pricing-plan.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.subscriptionPlan">خطة الاشتراك</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="instructor.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.instructors"> المدربون</a>
+            </li>
+            
+            
+        </ul>
+    </li>
+    <li>
+        <a href="admin-dashbord.html" class="nav-menu__link" data-i18n="nav.dashboard">لوحة التحكم</a>
+
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link" data-i18n="nav.blog"> المدونة</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.blogNetwork"> شبكة المدونة</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.blogDetails">تفاصيل المدونة</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item">
+        <a href="contact.html" class="nav-menu__link" data-i18n="nav.contactUs">تواصل معنا</a>
+    </li>
+    <li>
+        <a href="certification.html" class="nav-menu__link">الشهادة</a>
+    </li>
+    <li>
+        <a href="credit.html" class="nav-menu__link">الاعتمادات </a>
+    </li>
+</ul>
+            
+        </div>
+    </div>
+</div>
+<!-- ==================== Mobile Menu End Here ==================== -->
+
+
+    <!-- ==================== Header Start Here ==================== -->
+<header class="header">
+    <div class="container container--xl">
+        <nav class="header-inner flex-between gap-8">
+
+            <div class="header-content-wrapper flex-align flex-grow-1">
+                <!-- Logo Start -->
+                <div class="logo">
+                    <a href="index.html" class="link h-50 w-130">
+                        <img src="assets/images/thumbs/logo.8.png" width="" alt="Logo" class="h-100 w-100 rounded-10">
+                    </a>
+                </div>
+                <!-- Logo End  -->
+    
+                <!-- Menu Start  -->
+                <div class="header-menu d-lg-block d-none">
+                    
+<ul class="nav-menu flex-align">
+
+    <li class="activePage">
+        <a href="index.html" class="nav-menu__link" data-i18n="nav.home">الرئيسية</a>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">البرامج</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="course.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.courses"> الدورات المهنية</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="course.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.professionalDiploma">دبلوم مهني</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="masters.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.professionalMaster">ماجستير احترافي المهني</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="lesson-details.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.professionalDoctorate">دكتوراه مهنية</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link" data-i18n="nav.pages">الصفحات</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="about-two.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.aboutUs"> حولنا</a>
+            </li>
+        
+            <li class="nav-submenu__item">
+                <a href="pricing-plan.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.subscriptionPlan">خطة الاشتراك</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="instructor.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.instructors"> المدربون</a>
+            </li>
+            
+            
+        </ul>
+    </li>
+    <li>
+        <a href="admin-dashbord.html" class="nav-menu__link" data-i18n="nav.dashboard">لوحة التحكم</a>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link" data-i18n="nav.blog"> المدونة</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.blogNetwork"> شبكة المدونة</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-30" data-i18n="nav.blogDetails">تفاصيل المدونة</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item">
+        <a href="contact.html" class="nav-menu__link" data-i18n="nav.contactUs">تواصل معنا</a>
+    </li>
+    <li>
+        <a href="certification.html" class="nav-menu__link">الشهادة</a>
+    </li>
+    <li>
+        <a href="credit.html" class="nav-menu__link">الاعتمادات </a>
+    </li>
+</ul>
+                </div>
+                <!-- Menu End  -->
+            </div>
+
+            <!-- Header Right start -->
+            <div class="header-right flex-align gap-16">
+                <form action="#" class="search-form position-relative d-xl-block d-none">
+                    <input type="text" class="common-input rounded-pill bg-main-25 pe-58 border-neutral-30" placeholder="search...">
+                    <button type="submit" class="w-36 h-36 bg-main-600 hover-bg-main-700 rounded-circle flex-center text-md text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8">
+                        <i class="ph-bold ph-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <!-- Language Switcher -->
+                <div class="language-switcher d-flex gap-8 align-items-center">
+                    <button type="button" class="lang-btn lang-ar ps-12 pe-12 py-8 rounded-8 fw-semibold text-14 border-0 bg-main-600 hover-bg-main-25 hover-text-neutral-700 text-white transition-1" data-lang="ar">العربية</button>
+                    <span class="text-neutral-500">/</span>
+                    <button type="button" class="lang-btn lang-en ps-12 pe-12 py-8 rounded-8 fw-semibold text-14 border-0 bg-main-25 text-neutral-700 hover-bg-main-600 hover-text-white transition-1" data-lang="ar">English</button>
+                </div>
+
+                <button type="button" class="toggle-mobileMenu d-lg-none text-neutral-200 flex-center">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+            <!-- Header Right End  -->
+        </nav>
+    </div>
+</header>
+
+
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="hero-decoration"></div>
+  <div class="container position-relative">
+    <div class="row justify-content-end">
+      <div class="col-lg-8 col-xl-12 text-end fade-up fade-up-1">
+        <div class="section-label" style="justify-content: flex-end;"> تعمل أكاديمية</div>
+        <h1>اعتمادات <span>UN Academy for Influential Leaders (UNAIL)</span><br/>المهنية</h1>
+        <p>
+          ضمن إطار مؤسسي دولي منظم، وبالتزام كامل بمعايير الحوكمة المؤسسية وحماية البيانات والامتثال المهني بالمملكة المتحدة
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ BENEFITS ═══════════ -->
+<section class="benefits-section">
+  <div class="container ">
+        <div class="row align-items-center g-6">
+          <div class="col-lg-6 text-end fade-up fade-up-1">
+            <div class="section-label" style="justify-content: flex-end; font-size: 16px;">اعتمادات الاكاديمية</div>
+            <h2>فوائد الاعتمادات الأكاديمية</h2>
+            <div class="wavy-line" style="justify-content: flex-end;">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="benefits-lead">
+              تُبرز هذه الصفحة الفوائد التي يجنيها الطلاب والمؤسسات من الاعتمادات الأكاديمية المعترف بها،
+              كالاعتراف بالدرجات العلمية، وسهولة التحويل بين الجامعات، والقبول في برامج الدراسات العليا.
+            </p>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center fade-up fade-up-2">
+            <div class="benefits-img-wrap">
+              <!-- Placeholder image using gradient -->
+              <div style="
+                width:100%;
+                max-width:420px;
+                height:280px;
+                border-radius:4px;
+                background: linear-gradient(135deg, #0A1628 0%, #1A3A6B 50%, #1B4F8A 100%);
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-size:5rem;
+                position:relative;
+                z-index:1;
+                box-shadow: 10px 20px 40px rgba(10,22,40,.12)
+              ">
+              <img src="assets/images/thumbs/images1.png" alt="">
+            </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</section>
+
+
+
+<section class="benefits-section">
+  <div class="container ">
+        <div class="row align-items-center g-6">
+          <div class="col-lg-6 d-flex justify-content-center fade-up fade-up-2">
+            <div class="benefits-img-wrap">
+              <!-- Placeholder image using gradient -->
+              <div style="
+                width:100%;
+                max-width:420px;
+                height:280px;
+                border-radius:4px;
+                background: linear-gradient(135deg, #0A1628 0%, #1A3A6B 50%, #1B4F8A 100%);
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-size:5rem;
+                position:relative;
+                z-index:1;
+                box-shadow: 10px 20px 40px rgba(10,22,40,.12)
+              ">
+              <img src="assets/images/thumbs/images3.png" alt="">
+            </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-end fade-up fade-up-1">
+            <div class="section-label" style="justify-content: flex-end; font-size: 16px;">اعتمادات الاكاديمية</div>
+            <h2>مفهوم الساعات المعتمدة الاكاديمية</h2>
+            <div class="wavy-line" style="justify-content: flex-end;">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="benefits-lead">
+            تتعلق الاعتمادات الاكاديمية بعملية تقييم الجودة والتميز، والتي عادةً ما تُجرى من قبل هيئات أو مؤسسات مستقلة تُقيّم 
+            البرامج التعليمية والمؤسسات الجامعية. وتهدف هذه الاعتمادات إلى ضمان جودة التعليم وتميز الجامعات والكليات في تقديم البرامج التعليمية.
+            </p>
+          </div>
+        </div>
+  </div>
+</section>
+
+<!-- ═══════════ STATS BAR ═══════════ -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="row g-4 align-items-center justify-content-center">
+      <div class="col-6 col-md-3 fade-up fade-up-1">
+        <div class="stat-item">
+          <div class="stat-number">+15</div>
+          <div class="stat-label">اعتماداً دولياً</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-up fade-up-2">
+        <div class="stat-item">
+          <div class="stat-number">+40</div>
+          <div class="stat-label">شريكاً أكاديمياً</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-up fade-up-3">
+        <div class="stat-item">
+          <div class="stat-number">+8000</div>
+          <div class="stat-label">خريج معتمد</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-up fade-up-4">
+        <div class="stat-item">
+          <div class="stat-number">25+</div>
+          <div class="stat-label">عاماً من التميز</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ACCREDITATION CARDS ═══════════ -->
+<section style="background: var(--off-white); padding: 90px 0;">
+  <div class="container">
+    <div class="text-end mb-5 fade-up fade-up-1">
+      <div class="section-label" style="justify-content: flex-end;">جهات الاعتماد</div>
+      <h2 style="font-family:'Tajawal',sans-serif;font-weight:900;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--deep-blue);">
+        اعتماداتنا الرسمية
+      </h2>
+    </div>
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-6 fade-up fade-up-1">
+        <div class="accred-card">
+          <div class="accred-card-header">
+            <div class="accred-icon">
+                <img width="100%" src="assets/images/thumbs/Image33.png" alt="">
+            </div>
+            <h3>حكومة المملكة المتحدة</h3>
+          </div>
+          <div class="accred-card-body">
+            <p>
+              كلية UNAIL المهنية مُعتمدة رسمياً من الحكومة البريطانية تحت رقم الاعتماد
+              <span class="accred-num">#14854461</span>.
+              كما حصلت الاكاديمية على اعتمادات متخصصة تشمل:
+            </p>
+            <ul class="accred-list">
+              <li><span class="bullet"></span><div><strong>85320</strong> — التعليم الثانوي التقني والمهني: تقديم التعليم التقني والمهني على المستوى الثانوي.</div></li>
+              <li><span class="bullet"></span><div><strong>85421</strong> — التعليم العالي الأول: توفير التعليم العالي على مستوى البكالوريوس.</div></li>
+              <li><span class="bullet"></span><div><strong>85422</strong> — الدراسات العليا: توفير التعليم العالي على مستوى الماجستير.</div></li>
+              <li><span class="bullet"></span><div><strong>85600</strong> — خدمات الدعم التعليمي: تقديم خدمات الدعم والمساعدة التعليمية.</div></li>
+            </ul>
+            <a href="#" class="btn-gold">تصفح الاعتماد</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-6 fade-up fade-up-2">
+        <div class="accred-card">
+          <div class="accred-card-header">
+            <div class="accred-icon">
+                <img width="100%" src="assets/images/thumbs/images2.png" alt="">
+            </div>
+            <h3>المفوضية الأوروبية</h3>
+          </div>
+          <div class="accred-card-body">
+            <p>
+              حصلت الاكاديمية على موافقة المفوضية الأوروبية تحت الرقم
+              <span class="accred-num">#E10369832</span>.
+              كما تمت الموافقة للمشاركة في:
+            </p>
+            <ul class="accred-list">
+              <li><span class="bullet"></span><div>برنامج <strong>إيراسموس+</strong> الأوروبي للتبادل الأكاديمي وتعزيز فرص التعلم عبر الحدود.</div></li>
+              <li><span class="bullet"></span><div>برنامج <strong>فيلق التضامن الأوروبي</strong> لتمكين الشباب وتنمية مهاراتهم وخدمة المجتمع.</div></li>
+              <li><span class="bullet"></span><div>الشراكات مع المؤسسات الأعضاء في الاتحاد الأوروبي في مجالات البحث والابتكار.</div></li>
+            </ul>
+            <a href="#" class="btn-gold">تصفح الاعتماد</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-6 fade-up fade-up-3">
+        <div class="accred-card">
+          <div class="accred-card-header">
+            <div class="accred-icon">
+                <img width="100%" src="assets/images/thumbs/images1.png" alt="">
+            </div>
+            <h3>فيلق التضامن الأوروبي</h3>
+          </div>
+          <div class="accred-card-body">
+            <p>
+              اعتُمدت الاكاديميةوأُدرجت ضمن المؤسسات المعترف بها من قِبل مديرية التعليم والشباب
+              والرياضة والثقافة للاتحاد الأوروبي تحت رقم الاعتراف
+              <span class="accred-num">#E10369832</span>.
+            </p>
+            <ul class="accred-list">
+              <li><span class="bullet"></span><div>الاعتراف بمنح إيراسموس+ والمشاركة الفعّالة في برامجها.</div></li>
+              <li><span class="bullet"></span><div>الحصول على تمويل أوروبي للمشاريع البحثية والتعليمية المشتركة.</div></li>
+              <li><span class="bullet"></span><div>المشاركة في شبكة المؤسسات الوطنية الأوروبية المعنية بالتعليم والتدريب.</div></li>
+            </ul>
+            <a href="#" class="btn-gold">تصفح الاعتماد</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-6 fade-up fade-up-4">
+        <div class="accred-card">
+          <div class="accred-card-header">
+            <div class="accred-icon">
+                <img width="100%" src="assets/images/thumbs/images3.png" alt="">
+            </div>
+            <h3>بوابة التمويل والمناقصات </h3>
+          </div>
+          <div class="accred-card-body">
+            <p>
+              مُسجّلة في بوابة التمويل والمناقصات الأوروبية تحت رقم المشارك
+              <span class="accred-num">PIC 878019169</span>،
+              مما يُتيح للكلية الاستفادة من المزايا التالية:
+            </p>
+            <ul class="accred-list">
+              <li><span class="bullet"></span><div>الوصول إلى قنوات جديدة للحصول على تمويل من الاتحاد الأوروبي لدعم المشاريع البحثية والابتكارية.</div></li>
+              <li><span class="bullet"></span><div>تعزيز الشراكات والتعاون مع المؤسسات الأكاديمية الأخرى داخل الاتحاد الأوروبي وعلى الصعيد الدولي.</div></li>
+              <li><span class="bullet"></span><div>رفع مستوى السمعة والمصداقية بوصفها مؤسسة تعليمية مرموقة معترفاً بها أوروبياً.</div></li>
+            </ul>
+            <a href="#" class="btn-gold">تصفح الاعتماد</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PROGRAMS GRID ═══════════ -->
+<section class="programs-section">
+  <div class="container">
+    <div class="text-center mb-5 fade-up fade-up-1">
+      <div class="section-label" style="justify-content: center;">البرامج والمبادرات</div>
+      <h2 style="font-family:'Tajawal',sans-serif;font-weight:900;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--deep-blue);">
+        البرامج الأوروبية المعتمدة
+      </h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-4 fade-up fade-up-1">
+        <div class="program-tile">
+          <div class="tile-top-bar"></div>
+          <span class="tile-icon">
+            <img width="170px" src="assets/images/logo2/Untitled-1-07.jpg" alt="">
+          </span>
+          <h4>DiscoverEU</h4>
+          <p >مبادرة تمنح الشباب البالغين 18 عاماً فرصة السفر واستكشاف أوروبا بتذكرة سفر مجانية مقدّمة من الاتحاد الأوروبي.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up fade-up-2">
+        <div class="program-tile">
+          <div class="tile-top-bar"></div>
+          <span class="tile-icon">
+            <img width="170px" src="assets/images/logo2/Untitled-1-03.jpg" alt="">
+          </span>
+          <h4>إيراسموس+</h4>
+          <p>مشروع يُمكّن الشباب في أوروبا والمتوسط من الانخراط في تجارب ثقافية متبادلة عبر الإنترنت ضمن إطار تعليمي أو غير رسمي.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up fade-up-3">
+        <div class="program-tile">
+          <div class="tile-top-bar"></div>
+          <span class="tile-icon">
+            <img width="170px" src="assets/images/logo2/Untitled-1-04.jpg" alt="">
+          </span>
+          <h4>EURES</h4>
+          <p>بوابة التنقل الوظيفي الأوروبية التي تُساعدك في العثور على فرص عمل مناسبة في مختلف دول الاتحاد الأوروبي.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up fade-up-1">
+        <div class="program-tile">
+          <div class="tile-top-bar"></div>
+          <span class="tile-icon">
+            <img width="170px" src="assets/images/logo2/Untitled-1-05.jpg" alt="">
+          </span>
+          <h4>SHEU Leads</h4>
+          <p>برنامج يُسلّط الضوء على الشباب دون الثلاثين الذين يُحدثون فارقاً حقيقياً في مجتمعاتهم في مجالات الابتكار والتعليم والرياضة.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up fade-up-2">
+        <div class="program-tile">
+          <div class="tile-top-bar"></div>
+          <span class="tile-icon">
+            <img width="170px" src="assets/images/logo2/Untitled-1-06.jpg" alt="">
+          </span>
+          <h4>التبادل الافتراضي</h4>
+          <p>ممارسة تعتمد على التكنولوجيا لتمكين التواصل بين الأفراد من خلفيات مختلفة جغرافياً وثقافياً في بيئة تعليمية مستدامة.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up fade-up-3">
+        <div class="program-tile">
+          <div class="tile-top-bar"></div>
+          <span class="tile-icon">
+            <img width="170px" src="assets/images/logo2/Untitled-1-08.jpg" alt="">
+          </span>
+          <h4>المنصة التعليمية المدرسية</h4>
+          <p>تجمع بين الأفراد المتنوعين الموحّدين بشغف النمو والإبداع والوحدة الثقافية من خلال مشاريع في التعليم والثقافة والمواطنة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER STRIP ═══════════ -->
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer bg-neutral-900 position-relative z-1">
+    <img src="assets/images/shapes/shape2.png" alt="" class="shape five animation-scalation">
+    <img src="assets/images/shapes/shape6.png" alt="" class="shape one animation-scalation">
+    
+    <div class="py-120 ">
+        <div class="container container-two">
+            <div class="row gy-5">
+                <div class="col-lg-3 col-sm-6 col-xs-6"  data-aos="fade-up" data-aos-duration="400">
+                    <div class="footer-item">
+                        <h4 class="footer-item__title fw-medium text-white mb-32">Quick Link</h4>
+                        <ul class="footer-menu">
+                            <li class="mb-16">
+                                <a href="about.html" class="text-white hover-text-main-600 hover-text-decoration-underline">من نحن</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="courses.html" class="text-white hover-text-main-600 hover-text-decoration-underline">الكورسات</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="instructor.html" class="text-white hover-text-main-600 hover-text-decoration-underline">المدربين</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="faq.html" class="text-white hover-text-main-600 hover-text-decoration-underline">الأسئلة الشائعة</a>
+                            </li>
+                            <li class="mb-0">
+                                <a href="blog.html" class="text-white hover-text-main-600 hover-text-decoration-underline">المدونة</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-6"  data-aos="fade-up" data-aos-duration="600">
+                    <div class="footer-item">
+                        <h4 class="footer-item__title fw-medium text-white mb-32">Category</h4>
+                        <ul class="footer-menu">
+                            <li class="mb-16">
+                                <a href="courses.html" class="text-white hover-text-main-600 hover-text-decoration-underline">تطوير واجهات المستخدم</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="courses.html" class="text-white hover-text-main-600 hover-text-decoration-underline">تطوير الويب</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="courses.html" class="text-white hover-text-main-600 hover-text-decoration-underline">برمجة Python</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="courses.html" class="text-white hover-text-main-600 hover-text-decoration-underline">التسويق الرقمي</a>
+                            </li>
+                            <li class="mb-16">
+                                <a href="courses.html" class="text-white hover-text-main-600 hover-text-decoration-underline">تصميم الجرافيك</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-6"  data-aos="fade-up" data-aos-duration="800">
+                    <div class="footer-item">
+                        <h4 class="footer-item__title fw-medium text-white mb-32">Contact Us</h4>
+                        <div class="flex-align gap-20 mb-24">
+                            <span class="icon d-flex text-32 text-main-600"><i class="ph ph-phone"></i></span>
+                            <div class="">
+                                <a href="tel:(207)555-0119" class="text-white d-block hover-text-main-600 mb-4">(207) 555-0119</a>
+                                <a href="tel:(704)555-0127" class="text-white d-block hover-text-main-600 mb-0">(704) 555-0127</a>
+                            </div>
+                        </div>
+                        <div class="flex-align gap-20 mb-24">
+                            <span class="icon d-flex text-32 text-main-600"><i class="ph ph-envelope-open"></i></span>
+                            <div class="">
+                                <a href="mailto:dwallo@gmail.com" class="text-white d-block hover-text-main-600 mb-4">dwallo@gmail.com</a>
+                                <a href="mailto:UNAIL LONDON@gmail.com" class="text-white d-block hover-text-main-600 mb-0">UNAIL LONDON@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex-align gap-20 mb-0">
+                            <span class="icon d-flex text-32 text-main-600"><i class="ph ph-map-trifold"></i></span>
+                            <div class="">
+                                <span class="text-white d-block mb-4">5488 srker Rd .</span>
+                                <span class="text-white d-block mb-0">8745 doer Dr.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-6"  data-aos="fade-up" data-aos-duration="1200">
+                    <div class="footer-item">
+                        <h4 class="footer-item__title fw-medium text-white mb-32">Subscribe Here</h4>
+                        <p class="text-white">Enter your email address to register to our newsletter subscription</p>
+                        <form action="#" class="mt-24 position-relative">
+                            <input type="email" class="form-control bg-neutral-700 placeholder-white shadow-none border border-neutral-700 text-white rounded-pill h-52 ps-24 pe-48 focus-border-main-600" placeholder="Email...">
+                            <button type="submit" class="w-36 h-36 flex-center rounded-circle bg-main-600 text-white hover-bg-main-800 position-absolute top-50 translate-middle-y inset-inline-end-0 me-8">
+                                <i class="ph ph-paper-plane-tilt"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- bottom Footer -->
+        <div class="bottom-footer border-top border-dashed border-neutral-600 border-0 py-32">
+            <div class="container container-two">
+                <div class="bottom-footer__inner flex-between gap-16 flex-wrap">
+                    <div class="footer-item__logo mb-0"  data-aos="zoom-in-right">
+                        <a href="index.html" class="link h-50 w-130">
+                        <img src="assets/images/thumbs/logo.8.png" width="" alt="Logo" class="h-100 w-100 rounded-10">
+                    </a>
+                    </div>
+                    <p class="text-white text-line-1 fw-normal"  data-aos="zoom-in"> Copyright &copy; 2024 <span class="fw-semibold">UNAIL LONDON</span> All Rights Reserved.</p>
+                    <ul class="social-list flex-align gap-24"  data-aos="zoom-in-left">
+                        <li class="social-list__item">
+                            <a href="https://www.facebook.com" class="text-white text-2xl hover-text-main-two-600"><i class="ph-bold ph-facebook-logo"></i></a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.twitter.com" class="text-white text-2xl hover-text-main-two-600"> <i class="ph-bold ph-twitter-logo"></i></a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.linkedin.com" class="text-white text-2xl hover-text-main-two-600"><i class="ph-bold ph-instagram-logo"></i></a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.pinterest.com" class="text-white text-2xl hover-text-main-two-600"><i class="ph-bold ph-pinterest-logo"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ==================== Footer End Here ==================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Intersection Observer for fade-up animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.animationPlayState = 'running';
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.fade-up').forEach(el => {
+    el.style.animationPlayState = 'paused';
+    observer.observe(el);
+  });
+</script>
+
+        <!-- Jquery js -->
+    <!-- <script src="assets/js/jquery-3.7.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="assets/js/boostrap.bundle.min.js"></script>
+    <!-- select2 Js -->
+    <script src="assets/js/select2.min.js"></script>
+    <!-- Phosphor Icon Js -->
+    <script src="assets/js/phosphor-icon.js"></script>
+    <!-- Slick js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Slick js -->
+    <script src="assets/js/counter.min.js"></script>
+    <!-- magnific popup -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- Jquery Ui js -->
+    <script src="assets/js/jquery-ui.js"></script>
+    <!-- marquee js -->
+    <script src="assets/js/marquee.min.js"></script>
+    <!-- react charts-->
+     <script src="assets/js/apexcharts.js"></script>
+    <!-- plyr Js -->
+    <script src="assets/js/plyr.js"></script>
+    <!-- vanilla Tilt -->
+    <!-- Editor js Toolbar Start -->
+    <script src="assets/js/editor-quill.js"></script>
+    <!-- dataTables -->
+    <script src="assets/js/dataTables.min.js"></script>
+    <!-- Tilt -->
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+    <!-- wow -->
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/aos.js"></script>
+    
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

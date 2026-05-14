@@ -39,7 +39,7 @@ class I18nManager {
         elements.forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (!this.originalTexts.has(key)) {
-                if (element.tagName === 'INPUT' && element.type === 'text') {
+                if (element.tagName === 'INPUT' && element.hasAttribute('placeholder')) {
                     this.originalTexts.set(key, element.placeholder || '');
                 } else {
                     this.originalTexts.set(key, element.textContent.trim());
@@ -72,7 +72,7 @@ class I18nManager {
             const fallback = this.currentLang === 'ar' ? this.originalTexts.get(key) : null;
             const text = translation !== null ? translation : fallback;
             if (text !== null && text !== undefined) {
-                if (element.tagName === 'INPUT' && element.type === 'placeholder') {
+                if (element.tagName === 'INPUT' && element.hasAttribute('placeholder')) {
                     element.placeholder = text;
                 } else if (element.tagName === 'OPTION') {
                     element.textContent = text;

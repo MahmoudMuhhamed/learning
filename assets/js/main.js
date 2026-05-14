@@ -1206,3 +1206,98 @@ if ($('ul').length) {
     // ========================= Header Sticky Js End===================
 
 })(jQuery);
+
+
+
+
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   setupDashboardStats();
+  //   if (fileName === "dashbord-courses.html") setupCoursesDashboard();
+  //   if (fileName === "deshbord-reviews.html") {
+  //     setupTableCrud("reviews", "#example-five", ["course", "rating", "feedback", "count"], function (r) {
+  //       var stars = "★★★★★".slice(0, Number(r.rating || 0)) + "☆☆☆☆☆".slice(0, 5 - Number(r.rating || 0));
+  //       return '<tr class="hover-bg-neutral-20 border-bottom transition-03"><td class="py-28 px-20 shadow-none"><span class="fw-normal text-12 text-neutral-500">' + r.course + '</span></td><td class="text-14 fw-normal py-28 px-20 shadow-none">' + stars + '</td><td class="py-28 px-20 shadow-none">(' + r.count + ' Reviews) - ' + r.feedback + '</td><td class="py-28 px-20 shadow-none"><div class="d-flex align-items-center gap-12 justify-content-end"><button type="button" class="text-24 text-neutral-500 eduall-edit" data-id="' + r.id + '"><i class="ph-bold ph-pencil-simple-line"></i></button><button type="button" class="text-24 text-neutral-500 eduall-delete" data-id="' + r.id + '"><i class="ph-bold ph-trash"></i></button></div></td></tr>';
+  //     }, "Review");
+  //   }
+  //   if (fileName === "dashbord-quiz-attempts.html") {
+  //     setupTableCrud("quizzes", "#example-five", ["title", "instructor", "date", "questions", "totalMarks", "correctAnswers", "result"], function (qz) {
+  //       return '<tr class="hover-bg-neutral-20 border-bottom transition-03"><td class="py-28 px-20 shadow-none line-height-105"><h4 class="fw-medium text-14 text-neutral-500 mb-1">' + qz.title + '</h4><span class="fw-normal text-12 text-neutral-500">' + qz.instructor + '</span></td><td class="text-14 fw-normal py-28 px-20 shadow-none line-height-105">' + qz.date + '</td><td class="py-28 px-20 shadow-none line-height-105">' + qz.questions + '</td><td class="py-28 px-20 shadow-none line-height-105">' + qz.totalMarks + '</td><td class="py-28 px-20 shadow-none line-height-105">' + qz.correctAnswers + '</td><td class="py-28 px-20 shadow-none line-height-105"><span class="bg-success-50 px-20 py-8 border-neutral-30 border rounded-pill text-success-600">' + qz.result + '</span></td><td class="py-28 px-20 shadow-none line-height-105"><div class="d-flex align-items-center gap-12 justify-content-end"><button type="button" class="text-24 text-neutral-500 eduall-edit" data-id="' + qz.id + '"><i class="ph-bold ph-pencil-simple-line"></i></button><button type="button" class="text-24 text-neutral-500 eduall-delete" data-id="' + qz.id + '"><i class="ph-bold ph-trash"></i></button></div></td></tr>';
+  //     }, "Quiz");
+  //   }
+  //   if (fileName === "dashbord-students.html") {
+  //     setupTableCrud("students", "#example-five", ["name", "email", "enrolledCourses"], function (s) {
+  //       return '<tr class="hover-bg-neutral-20 border-bottom transition-03"><td class="py-22 px-20 shadow-none text-14 fw-medium text-neutral-500">' + s.name + '</td><td class="text-14 fw-normal py-22 px-20 shadow-none text-neutral-500">' + s.email + '</td><td class="py-22 px-20 text-14 fw-normal text-neutral-500 shadow-none">' + (s.enrolledCourses || 0) + '</td><td class="py-22 px-20 shadow-none"><div class="d-flex align-items-center gap-12 justify-content-end"><button class="btn btn-sm btn-outline-primary eduall-edit" data-id="' + s.id + '">Edit</button><button class="btn btn-sm btn-outline-danger eduall-delete" data-id="' + s.id + '">Delete</button></div></td></tr>';
+  //     }, "Student");
+  //   }
+  //   if (fileName === "dashbord-tutors.html") {
+  //     setupTableCrud("tutors", "#example-five", ["name", "title", "image", "students"], function (t) {
+  //       return '<tr class="hover-bg-neutral-20 border-bottom transition-03"><td class="py-22 px-20 shadow-none"><div class="d-flex align-items-center gap-12"><img src="' + (t.image || "") + '" alt="" class="w-32 h-32"><span class="fw-medium text-14 text-neutral-500">' + t.name + '</span></div></td><td class="text-14 fw-normal py-22 px-20 shadow-none text-neutral-500">' + (t.title || "") + '</td><td class="py-22 px-20 text-14 fw-normal text-neutral-500 shadow-none">' + (t.students || 0) + '</td><td class="py-22 px-20 shadow-none"><div class="d-flex align-items-center gap-12 justify-content-end"><button class="btn btn-sm btn-outline-primary eduall-edit" data-id="' + t.id + '">Edit</button><button class="btn btn-sm btn-outline-danger eduall-delete" data-id="' + t.id + '">Delete</button></div></td></tr>';
+  //     }, "Tutor");
+  //   }
+  //   if (fileName === "dashbord-blogs.html") {
+  //     setupTableCrud("blogs", "#example-five", ["title", "description", "author", "image", "date", "comments"], function (b) {
+  //       return '<tr class="hover-bg-neutral-20 border-bottom transition-03"><td class="py-20 px-20 shadow-none"><div><h6 class="fw-medium text-14 text-neutral-500 mb-3">' + b.title + '</h6><span class="fw-normal text-12 text-neutral-500">' + (b.description || "") + '</span></div></td><td class="text-14 fw-normal py-20 px-20 shadow-none text-neutral-500">' + (b.author || "") + '</td><td class="py-20 px-20 text-14 fw-normal text-neutral-500 shadow-none">' + (b.date || "") + '</td><td class="py-20 px-20 shadow-none"><div class="d-flex align-items-center gap-12 justify-content-end"><button class="btn btn-sm btn-outline-primary eduall-edit" data-id="' + b.id + '">Edit</button><button class="btn btn-sm btn-outline-danger eduall-delete" data-id="' + b.id + '">Delete</button></div></td></tr>';
+  //     }, "Blog");
+  //   }
+  //   if (fileName === "dashbord-events.html") {
+  //     setupTableCrud("events", "#example-five", ["title", "location", "date", "time", "price", "image"], function (ev) {
+  //       return '<tr class="hover-bg-neutral-20 border-bottom transition-03"><td class="py-20 px-20 shadow-none text-14 fw-medium text-neutral-500">' + ev.title + '</td><td class="text-14 fw-normal py-20 px-20 shadow-none text-neutral-500">' + (ev.location || "") + '</td><td class="py-20 px-20 text-14 fw-normal text-neutral-500 shadow-none">' + (ev.date || "") + " " + (ev.time || "") + '</td><td class="py-20 px-20 shadow-none"><div class="d-flex align-items-center gap-12 justify-content-end"><button class="btn btn-sm btn-outline-primary eduall-edit" data-id="' + ev.id + '">Edit</button><button class="btn btn-sm btn-outline-danger eduall-delete" data-id="' + ev.id + '">Delete</button></div></td></tr>';
+  //     }, "Event");
+  //   }
+  //   if (fileName === "dashbord-message.html") {
+  //     var listRoot = q(".max-w-420-px .mt-24");
+  //     var addMsgBtn = qa("a").find(function (a) { return a.textContent.trim() === "Create a New Course"; });
+  //     var searchMsg = q('input[placeholder="Search contacts..."]');
+  //     if (listRoot) {
+  //       var msgModal = ensureModal("eduallMessageModal", "Message", '<input class="form-control mb-3" name="name" placeholder="Name" required><input class="form-control mb-3" name="snippet" placeholder="Message" required><input class="form-control mb-3" name="time" placeholder="Time" required><input class="form-control mb-3" name="unread" type="number" placeholder="Unread Count" required><input class="form-control mb-3" name="avatar" placeholder="Avatar URL" required>', "Save");
+  //       var msgForm = msgModal.querySelector("form");
+  //       var editMsgId = null;
+  //       var msgQuery = "";
+  //       var renderMsg = function () {
+  //         listRoot.innerHTML = window.EduallData.getAll("messages").filter(function (m) { return !msgQuery || JSON.stringify(m).toLowerCase().indexOf(msgQuery) > -1; }).map(function (m) {
+  //           return '<div class="px-24 py-12 d-flex align-items-center gap-16 justify-content-between mb-16 hover-bg-neutral-20 rounded-8 transition-03"><div class="d-flex align-items-center gap-12 flex-wrap"><img src="' + m.avatar + '" alt=""><div><h6 class="text-14 fw-medium text-neutral-500 mb-0">' + m.name + '</h6><span class="text-12 fw-normal text-neutral-100">' + m.snippet + '</span></div></div><div class="text-end"><span class="text-12 fw-normal text-neutral-100 d-block mb-8">' + m.time + '</span><div class="d-flex gap-2 justify-content-end"><span class="d-inline-flex text-12 fw-medium text-white bg-main-600 w-20 h-20 rounded-circle align-items-center justify-content-center">' + (m.unread || 0) + '</span><button class="btn btn-sm btn-outline-primary eduall-edit" data-id="' + m.id + '">E</button><button class="btn btn-sm btn-outline-danger eduall-delete" data-id="' + m.id + '">D</button></div></div></div>';
+  //         }).join("");
+  //       };
+  //       msgForm.addEventListener("submit", function (e) {
+  //         e.preventDefault();
+  //         var data = Object.fromEntries(new FormData(msgForm).entries());
+  //         data.unread = Number(data.unread || 0);
+  //         if (editMsgId) window.EduallData.update("messages", editMsgId, data); else window.EduallData.create("messages", data);
+  //         editMsgId = null; msgForm.reset(); renderMsg(); bootstrap.Modal.getOrCreateInstance(msgModal).hide();
+  //       });
+  //       listRoot.addEventListener("click", function (e) {
+  //         var edit = e.target.closest(".eduall-edit");
+  //         var del = e.target.closest(".eduall-delete");
+  //         if (edit) {
+  //           var m = window.EduallData.getById("messages", edit.dataset.id);
+  //           if (!m) return;
+  //           editMsgId = m.id;
+  //           Object.keys(m).forEach(function (k) { if (msgForm.elements[k]) msgForm.elements[k].value = m[k]; });
+  //           bootstrap.Modal.getOrCreateInstance(msgModal).show();
+  //         }
+  //         if (del) showDelete("messages", del.dataset.id, renderMsg);
+  //       });
+  //       if (addMsgBtn) addMsgBtn.addEventListener("click", function (e) { e.preventDefault(); editMsgId = null; msgForm.reset(); bootstrap.Modal.getOrCreateInstance(msgModal).show(); });
+  //       if (searchMsg) searchMsg.addEventListener("input", function () { msgQuery = this.value.toLowerCase().trim(); renderMsg(); });
+  //       renderMsg();
+  //     }
+  //   }
+  //   if (fileName === "course-list-view.html") setupFrontendCourses();
+  //   if (fileName === "blog-list.html") {
+  //     setupFrontendSimple("blogs", ".blog-page-section", function (b) {
+  //       return '<div class="col-lg-6"><div class="scale-hover-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30 d-flex flex-sm-row flex-column"><div class="course-item__thumb rounded-12 overflow-hidden position-relative max-w-274 w-100"><a href="blog-details.html"><img src="' + b.image + '" alt="' + b.title + '" class="scale-hover-item__img rounded-12 cover-img transition-2"></a></div><div class="p-20 position-relative"><h4 class="mb-28"><a href="blog-details.html" class="link text-line-3 ">' + b.title + '</a></h4><p>' + (b.description || "") + '</p></div></div></div>';
+  //     }, 8);
+  //   }
+  //   if (fileName === "blog.html") {
+  //     setupFrontendSimple("blogs", ".blog-page-section", function (b) {
+  //       return '<div class="col-lg-4 col-sm-6"><div class="scale-hover-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30"><div class="course-item__thumb rounded-12 overflow-hidden position-relative"><a href="blog-details.html"><img src="' + b.image + '" alt="' + b.title + '" class="scale-hover-item__img rounded-12 cover-img transition-2"></a></div><div class="p-20 position-relative"><h4 class="mb-16"><a href="blog-details.html" class="link text-line-2">' + b.title + '</a></h4><p class="text-neutral-500 text-line-3">' + (b.description || "") + '</p></div></div></div>';
+  //     }, 9);
+  //   }
+  //   if (fileName === "events.html") {
+  //     setupFrontendSimple("events", ".course-list-view", function (e) {
+  //       return '<div class="col-xl-4 col-sm-6"><div class="scale-hover-item bg-main-25 rounded-16 p-12 h-100 border border-neutral-30"><div class="course-item__thumb rounded-12 overflow-hidden position-relative"><a href="event-details.html"><img src="' + e.image + '" alt="' + e.title + '" class="scale-hover-item__img rounded-12 cover-img transition-2"></a><div class="bg-success-600 rounded-8 px-24 py-12 text-white position-absolute inset-block-start-0 inset-inline-start-0 mt-20 ms-20 z-1">' + e.time + '</div></div><div class="pt-32 pb-24 px-16 position-relative"><h4 class="mb-28"><a href="event-details.html" class="link text-line-2">' + e.title + '</a></h4><div class="flex-align gap-8"><span class="text-neutral-500 text-2xl d-flex"><i class="ph-bold ph-map-pin-line"></i></span><p class="text-neutral-500 text-lg">' + e.location + '</p></div><div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0"><h4 class="text-main-two-600 mb-0">$' + e.price + '</h4></div></div></div></div>';
+  //     }, 6);
+  //   }
+  //   setupAdminEntityTables();
+  //   setupFrontendTutors();
+  // });

@@ -59,6 +59,7 @@
   "common": {
     "loading": "جارٍ التحميل...",
     "error": "خطأ",
-    "success": "نجح"
+    "success": "نجح",
+    "searchPlaceholder": "بحث..."
   }
 }
